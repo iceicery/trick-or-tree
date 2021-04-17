@@ -5,18 +5,21 @@
   background-image: url('https://images.unsplash.com/photo-1599940824399-b87987ceb72a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJlZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
   background-repeat: no-repeat;
   height: 100vh;
+  background-size: cover;
 }
 
 .home__logo-box {
-  margin: 28% 0 0;
+  margin: 100px 0 0;
   width: 60%;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
+  max-width: 300px;
 }
 
 .home__logo {
   margin: 20% 0 0;
-  width: 50%;
+  width: 80%;
+  max-width: 300px;
 }
 
 .home__text {
@@ -27,6 +30,7 @@
 }
 
 .home__button-box {
+  width: 100%;
   margin: auto auto 0;
 }
 
