@@ -10,9 +10,11 @@ export default function Home() {
         <p className="home__text">Explore | Learn | Play</p>
       </div>
       <div className="home__button-box">
-        <button className="home__button home__button-1">How to Use</button>
-        <button className="home__button home__button-2">Big Trees Map</button>
-        <button className="home__button home__button-3">Game</button>
+        <button className="home__button home__button-1">Learn More</button>
+        <button className="home__button home__button-2">
+          AL Champion Trees Map
+        </button>
+        <button className="home__button home__button-3">Local Tree Hunt</button>
       </div>
     </section>
   );

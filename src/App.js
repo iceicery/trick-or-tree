@@ -1,4 +1,5 @@
 import './App.css';
+import About from './component/About/About';
 import ChampionMap from './component/ChampionMap/ChampionMap';
 import Home from './component/Home/Home';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Home />
       <ChampionMap />
+      <About />
     </div>
   );
 }
