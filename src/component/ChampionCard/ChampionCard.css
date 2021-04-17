@@ -1,0 +1,48 @@
+.championcard {
+  display: flex;
+}
+
+.championcard__title {
+  font: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.championcard__container {
+  display: flex;
+}
+
+.championcard__img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.championcard__info-box {
+  margin: 0 10px;
+  padding: 0;
+}
+
+.championcard__info {
+  margin: 5px 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 1.1;
+}
+.championcard__compare {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.championcard__compare-tree {
+  background-color: rgb(9, 175, 9);
+  width: 15px;
+}
+
+.championcard__compare-kid {
+  background-image: url('../../images/kid.PNG');
+  height: 20px;
+  width: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
