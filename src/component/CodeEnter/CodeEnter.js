@@ -2,61 +2,80 @@ import { useState, React } from 'react';
 import './CodeEnter.css';
 
 export default function CodeEnter() {
-  const [value, setValue] = useState('');
-  const [nextComponent, setNextComponent] = useState();
-  console.log(nextComponent);
-  function handleTextChange(e) {
-    if (e.target.value.length <= 1) {
-      setValue(e.target.value);
+  const numOfFields = 4;
+
+  const [ssnValues, setValue] = useState({
+    ssn1: '',
+    ssn2: '',
+    ssn3: '',
+  });
+  console.log(ssnValues);
+
+  const handleChange = (e) => {
+    const { maxLength, value, name } = e.target;
+    const [fieldName, fieldIndex] = name.split('-');
+    if (value.length >= maxLength) {
+      if (parseInt(fieldIndex, 10) < numOfFields) {
+        const nextSibling = document.querySelector(
+          `input[name=ssn-${parseInt(fieldIndex, 10) + 1}]`
+        );
+        if (nextSibling !== null) {
+          nextSibling.focus();
+        }
+      }
     }
-    if (e.target.value.length === 1) {
-      nextComponent.focus();
-    }
-  }
+    setValue({
+      ...value,
+      [`ssn${fieldIndex}`]: value,
+    });
+  };
   return (
     <section className="codeenter">
       <h1 className="codeenter__title">Enter Four Digit Code</h1>
       <form className="codeenter__form">
         <input
           type="text"
-          maxLength="1"
+          name="ssn-1"
+          maxLength={1}
           size="1"
           min="0"
           max="9"
           pattern="[0-9]{1}"
           className="codeenter__input"
-          onChange={handleTextChange}
-          ref={(c) => setNextComponent(c)}
+          onChange={handleChange}
         />
         <input
           type="text"
-          maxLength="1"
+          name="ssn-2"
+          maxLength={1}
           size="1"
           min="0"
           max="9"
           pattern="[0-9]{1}"
           className="codeenter__input"
-          ref={(c) => setNextComponent(c)}
+          onChange={handleChange}
         />
         <input
           type="text"
-          maxLength="1"
+          name="ssn-3"
+          maxLength={1}
           size="1"
           min="0"
           max="9"
           pattern="[0-9]{1}"
           className="codeenter__input"
-          ref={(c) => setNextComponent(c)}
+          onChange={handleChange}
         />
         <input
           type="text"
-          maxLength="1"
+          name="ssn-4"
+          maxLength={1}
           size="1"
           min="0"
           max="9"
           pattern="[0-9]{1}"
           className="codeenter__input"
-          ref={(c) => setNextComponent(c)}
+          onChange={handleChange}
         />
       </form>
     </section>
