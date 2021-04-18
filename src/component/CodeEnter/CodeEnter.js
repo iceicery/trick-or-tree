@@ -1,5 +1,6 @@
 import { useState, React } from 'react';
 import './CodeEnter.css';
+import lightbulb from '../../images/lightbulb-solid.svg';
 
 export default function CodeEnter() {
   const numOfFields = 4;
@@ -17,7 +18,7 @@ export default function CodeEnter() {
     if (value.length >= maxLength) {
       if (parseInt(fieldIndex, 10) < numOfFields) {
         const nextSibling = document.querySelector(
-          `input[name=ssn-${parseInt(fieldIndex, 10) + 1}]`
+          `input[name=${fieldName}-${parseInt(fieldIndex, 10) + 1}]`
         );
         if (nextSibling !== null) {
           nextSibling.focus();
@@ -31,7 +32,14 @@ export default function CodeEnter() {
   };
   return (
     <section className="codeenter">
-      <h1 className="codeenter__title">Enter Four Digit Code</h1>
+      <h2 className="codeenter__title">
+        <span className="codeenter__cap">Welcome! </span>Get ready to indentify
+        the tree! You could get tips by clicking lightbulb button anytime.
+      </h2>
+      <button className="coddenter__button-tip">
+        <img src={lightbulb} alt="tips" className="coddenter__button-img" />
+      </button>
+      <h2 className="codeenter__title">Enter Four Digit Code</h2>
       <form className="codeenter__form">
         <input
           type="text"

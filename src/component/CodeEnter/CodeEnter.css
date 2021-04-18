@@ -5,12 +5,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
+.codeenter__cap {
+  font-weight: 800;
+}
 .codeenter__title {
+  font-weight: 300;
   color: #fff;
   margin: 0 10%;
+}
+
+.coddenter__button-img {
+  width: 30px;
+}
+
+.coddenter__button-tip {
+  background-color: transparent;
+  width: min-content;
+  border: none;
+}
+
+.codeenter__button-tip:hover {
+  cursor: pointer;
+  background-color: #000;
 }
 
 .codeenter__form {
