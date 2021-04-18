@@ -1,0 +1,42 @@
+import './TreeHunt.css';
+import lightbulb from '../../images/lightbulb-solid.svg';
+import Tips from '../Tips/Tips';
+import smooth from '../../images/smooth-leaf.PNG';
+import Selection from '../Selection/Selection';
+
+const leafTypes = {
+  title: 'Leaf Type',
+  choices: [
+    {
+      image: smooth,
+      description: 'Smooth',
+    },
+    {
+      image: smooth,
+      description: 'Smooth',
+    },
+    {
+      image: smooth,
+      description: 'Smooth',
+    },
+    {
+      image: smooth,
+      description: 'Smooth',
+    },
+  ],
+};
+
+export default function TreeHunt({ toggleTips, isTipsOpen }) {
+  return (
+    <section className="treehunt">
+      <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
+      <div className="treehunt__title-box">
+        <h2 className="treehunt__title">Pick the best one</h2>
+        <button className="coddenter__button-tip" onClick={toggleTips}>
+          <img src={lightbulb} alt="tips" className="coddenter__button-img" />
+        </button>
+      </div>
+      <Selection title={leafTypes.title} choices={leafTypes.choices} />
+    </section>
+  );
+}

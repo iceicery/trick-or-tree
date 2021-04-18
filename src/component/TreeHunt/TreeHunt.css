@@ -1,0 +1,16 @@
+.treehunt {
+  background-color: #a5661f;
+  height: 100vh;
+  position: relative;
+}
+
+.treehunt__title-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  border-bottom: #fff solid 1px;
+}
+
+.treehunt__title {
+  color: #fff;
+}
