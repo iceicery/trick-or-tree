@@ -1,10 +1,11 @@
 import { useState, React } from 'react';
 import './CodeEnter.css';
 import lightbulb from '../../images/lightbulb-solid.svg';
+import Tips from '../Tips/Tips';
 
-export default function CodeEnter() {
+export default function CodeEnter({ isTipsOpen, toggleTips }) {
+  console.log(isTipsOpen);
   const numOfFields = 4;
-
   const [ssnValues, setValue] = useState({
     ssn1: '',
     ssn2: '',
@@ -30,13 +31,15 @@ export default function CodeEnter() {
       [`ssn${fieldIndex}`]: value,
     });
   };
+  console.log(isTipsOpen);
   return (
     <section className="codeenter">
+      <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
       <h2 className="codeenter__title">
         <span className="codeenter__cap">Welcome! </span>Get ready to indentify
         the tree! You could get tips by clicking lightbulb button anytime.
       </h2>
-      <button className="coddenter__button-tip">
+      <button className="coddenter__button-tip" onClick={toggleTips}>
         <img src={lightbulb} alt="tips" className="coddenter__button-img" />
       </button>
       <h2 className="codeenter__title">Enter Four Digit Code</h2>

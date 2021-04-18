@@ -1,16 +1,16 @@
 import './Tips.css';
+import close from '../../images/times-solid.svg';
 
-export default function Tips() {
+export default function Tips({ isTipsOpen, toggleTips }) {
   return (
-    <section className="tips">
+    <section className={isTipsOpen ? 'tips' : 'hidden'}>
+      <button className="tips__button-close" onClick={toggleTips}>
+        <img src={close} alt="tips" className="tips__button-img" />
+      </button>
       <h1>Tips for Indentifing Trees</h1>
       <ul>
         <li>
           Always start at the beginning of the key and follow it step by step.
-          Each choice will refer you to the next step, which may be a number,
-          another section in the key, or the conclusion or species. It is a good
-          practice to write down your order of progress, such as 1 - 2 - 4. This
-          will make it easier for you to find and correct mistakes
         </li>
         <li>
           Always read both choices, even if the first choice sounds correct. The
@@ -23,19 +23,14 @@ export default function Tips() {
           resulting answers.
         </li>
         <li>
-          Always look at several samples when keying a specimen. Key
-          characteristics, especially leaves, can vary even on the same tree.
-        </li>
-        <li>
           When measurements are given, as in the size of the leaves, don’t
           guess. Use a ruler.
         </li>
         <li>
-          Become familiar with the botanical terms used to describe trees. Terms
-          used in this key are illustrated on pages 10 through 13.
+          Become familiar with the botanical terms used to describe trees.
         </li>
       </ul>
-      <p>RESOUR from ALABAMA A&M AND AUBURN UNIVERSITIES</p>
+      <p>&copy; ALABAMA A&M AND AUBURN UNIVERSITIES</p>
     </section>
   );
 }
