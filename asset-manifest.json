@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/trick-or-tree/static/css/main.39e1a244.chunk.css",
-    "main.js": "/trick-or-tree/static/js/main.bba99932.chunk.js",
-    "main.js.map": "/trick-or-tree/static/js/main.bba99932.chunk.js.map",
-    "runtime-main.js": "/trick-or-tree/static/js/runtime-main.c5378a9b.js",
-    "runtime-main.js.map": "/trick-or-tree/static/js/runtime-main.c5378a9b.js.map",
-    "static/js/2.a06afb4b.chunk.js": "/trick-or-tree/static/js/2.a06afb4b.chunk.js",
-    "static/js/2.a06afb4b.chunk.js.map": "/trick-or-tree/static/js/2.a06afb4b.chunk.js.map",
-    "static/js/3.d3bb7c95.chunk.js": "/trick-or-tree/static/js/3.d3bb7c95.chunk.js",
-    "static/js/3.d3bb7c95.chunk.js.map": "/trick-or-tree/static/js/3.d3bb7c95.chunk.js.map",
+    "main.js": "/trick-or-tree/static/js/main.77a48b97.chunk.js",
+    "main.js.map": "/trick-or-tree/static/js/main.77a48b97.chunk.js.map",
+    "runtime-main.js": "/trick-or-tree/static/js/runtime-main.f1075715.js",
+    "runtime-main.js.map": "/trick-or-tree/static/js/runtime-main.f1075715.js.map",
+    "static/js/2.9dc02ec3.chunk.js": "/trick-or-tree/static/js/2.9dc02ec3.chunk.js",
+    "static/js/2.9dc02ec3.chunk.js.map": "/trick-or-tree/static/js/2.9dc02ec3.chunk.js.map",
+    "static/js/3.1b0c9ba8.chunk.js": "/trick-or-tree/static/js/3.1b0c9ba8.chunk.js",
+    "static/js/3.1b0c9ba8.chunk.js.map": "/trick-or-tree/static/js/3.1b0c9ba8.chunk.js.map",
     "index.html": "/trick-or-tree/index.html",
     "static/css/main.39e1a244.chunk.css.map": "/trick-or-tree/static/css/main.39e1a244.chunk.css.map",
-    "static/js/2.a06afb4b.chunk.js.LICENSE.txt": "/trick-or-tree/static/js/2.a06afb4b.chunk.js.LICENSE.txt",
+    "static/js/2.9dc02ec3.chunk.js.LICENSE.txt": "/trick-or-tree/static/js/2.9dc02ec3.chunk.js.LICENSE.txt",
     "static/media/ChampionCard.css": "/trick-or-tree/static/media/kid.292ca951.PNG",
     "static/media/lightbulb-solid.8d62fb45.svg": "/trick-or-tree/static/media/lightbulb-solid.8d62fb45.svg",
     "static/media/map-marked.b7194aaf.svg": "/trick-or-tree/static/media/map-marked.b7194aaf.svg",
@@ -20,9 +20,9 @@
     "static/media/treelogoW.b214c2ee.png": "/trick-or-tree/static/media/treelogoW.b214c2ee.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c5378a9b.js",
-    "static/js/2.a06afb4b.chunk.js",
+    "static/js/runtime-main.f1075715.js",
+    "static/js/2.9dc02ec3.chunk.js",
     "static/css/main.39e1a244.chunk.css",
-    "static/js/main.bba99932.chunk.js"
+    "static/js/main.77a48b97.chunk.js"
   ]
 }
