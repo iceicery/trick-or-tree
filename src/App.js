@@ -6,10 +6,11 @@ import ChampionMap from './component/ChampionMap/ChampionMap';
 import CodeEnter from './component/CodeEnter/CodeEnter';
 import Home from './component/Home/Home';
 import TreeHunt from './component/TreeHunt/TreeHunt';
+import TreeHuntMap from './component/TreeHuntMap/TreeHuntMap';
 
 function App() {
   const [isTipsOpen, setIsTipsOpen] = useState(false);
-  const [isMapOpen, setIsMapOpen] = useState(false);
+  const [isMapOpen, setIsMapOpen] = useState(true);
   function toggleTips() {
     setIsTipsOpen(!isTipsOpen);
   }
@@ -24,6 +25,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+            <TreeHuntMap />
           </Route>
           <Route path="/champion-map">
             <ChampionMap />

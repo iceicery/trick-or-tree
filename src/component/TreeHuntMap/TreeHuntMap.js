@@ -5,13 +5,13 @@ import close from '../../images/times-solid.svg';
 
 export default function TreeHuntMap({ isMapOpen, toggleMap }) {
   return (
-    <section className={isMapOpen ? 'treehuntmap' : 'hidden'}>
-      <button className="tips__button-close" onClick={toggleMap}>
+    <section className={isMapOpen ? 'treehuntmap' : 'treehuntmap hidden'}>
+      <button className="treehuntmap__button-close" onClick={toggleMap}>
         <img src={close} alt="close" className="tips__button-img" />
       </button>
       <MapContainer
-        center={[34.70770745466896, -86.63427752193223]}
-        zoom={30}
+        center={[34.707261, -86.634346]}
+        zoom={20}
         scrollWheelZoom={false}
         className="treehunt__map"
       >
