@@ -1,6 +1,5 @@
 {
   "name": "trick-or-trees",
-  "homepage": "https://iceicery.github.io/trick-or-tree",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
