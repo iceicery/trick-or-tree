@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/trick-or-tree/static/css/main.39e1a244.chunk.css",
-    "main.js": "/trick-or-tree/static/js/main.77a48b97.chunk.js",
-    "main.js.map": "/trick-or-tree/static/js/main.77a48b97.chunk.js.map",
-    "runtime-main.js": "/trick-or-tree/static/js/runtime-main.f1075715.js",
-    "runtime-main.js.map": "/trick-or-tree/static/js/runtime-main.f1075715.js.map",
-    "static/js/2.9dc02ec3.chunk.js": "/trick-or-tree/static/js/2.9dc02ec3.chunk.js",
-    "static/js/2.9dc02ec3.chunk.js.map": "/trick-or-tree/static/js/2.9dc02ec3.chunk.js.map",
-    "static/js/3.1b0c9ba8.chunk.js": "/trick-or-tree/static/js/3.1b0c9ba8.chunk.js",
-    "static/js/3.1b0c9ba8.chunk.js.map": "/trick-or-tree/static/js/3.1b0c9ba8.chunk.js.map",
+    "main.css": "/trick-or-tree/static/css/main.f9eadff8.chunk.css",
+    "main.js": "/trick-or-tree/static/js/main.17c0741d.chunk.js",
+    "main.js.map": "/trick-or-tree/static/js/main.17c0741d.chunk.js.map",
+    "runtime-main.js": "/trick-or-tree/static/js/runtime-main.4d34358f.js",
+    "runtime-main.js.map": "/trick-or-tree/static/js/runtime-main.4d34358f.js.map",
+    "static/js/2.81889d24.chunk.js": "/trick-or-tree/static/js/2.81889d24.chunk.js",
+    "static/js/2.81889d24.chunk.js.map": "/trick-or-tree/static/js/2.81889d24.chunk.js.map",
+    "static/js/3.7fba837b.chunk.js": "/trick-or-tree/static/js/3.7fba837b.chunk.js",
+    "static/js/3.7fba837b.chunk.js.map": "/trick-or-tree/static/js/3.7fba837b.chunk.js.map",
     "index.html": "/trick-or-tree/index.html",
-    "static/css/main.39e1a244.chunk.css.map": "/trick-or-tree/static/css/main.39e1a244.chunk.css.map",
-    "static/js/2.9dc02ec3.chunk.js.LICENSE.txt": "/trick-or-tree/static/js/2.9dc02ec3.chunk.js.LICENSE.txt",
+    "static/css/main.f9eadff8.chunk.css.map": "/trick-or-tree/static/css/main.f9eadff8.chunk.css.map",
+    "static/js/2.81889d24.chunk.js.LICENSE.txt": "/trick-or-tree/static/js/2.81889d24.chunk.js.LICENSE.txt",
     "static/media/ChampionCard.css": "/trick-or-tree/static/media/kid.292ca951.PNG",
     "static/media/lightbulb-solid.8d62fb45.svg": "/trick-or-tree/static/media/lightbulb-solid.8d62fb45.svg",
     "static/media/map-marked.b7194aaf.svg": "/trick-or-tree/static/media/map-marked.b7194aaf.svg",
@@ -20,9 +20,9 @@
     "static/media/treelogoW.b214c2ee.png": "/trick-or-tree/static/media/treelogoW.b214c2ee.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1075715.js",
-    "static/js/2.9dc02ec3.chunk.js",
-    "static/css/main.39e1a244.chunk.css",
-    "static/js/main.77a48b97.chunk.js"
+    "static/js/runtime-main.4d34358f.js",
+    "static/js/2.81889d24.chunk.js",
+    "static/css/main.f9eadff8.chunk.css",
+    "static/js/main.17c0741d.chunk.js"
   ]
 }
