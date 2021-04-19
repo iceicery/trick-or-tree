@@ -1,9 +1,6 @@
 .treehuntmap {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  height: 80vh;
+  position: relative;
+  margin: 0;
   border-radius: 10px;
   background-color: transparent;
 }
@@ -15,7 +12,7 @@
 
 .treehuntmap__button-close {
   position: absolute;
-  top: 0px;
+  top: -30px;
   right: 0;
   background-color: #fff;
   border: #fff;

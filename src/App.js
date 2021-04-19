@@ -25,10 +25,12 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
-            <TreeHuntMap />
           </Route>
           <Route path="/champion-map">
             <ChampionMap />
+          </Route>
+          <Route path="/treehunt-map">
+            <TreeHuntMap />
           </Route>
           <Route path="/about">
             <About />

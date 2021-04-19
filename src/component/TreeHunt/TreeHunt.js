@@ -37,18 +37,10 @@ export default function TreeHunt({
   return (
     <section className="treehunt">
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
-      <TreeHuntMap toggleMap={toggleMap} isMapOpen={isMapOpen} />
       <div className="treehunt__title-box">
         <h2 className="treehunt__title">Pick the best one</h2>
         <button className="coddenter__button-tip" onClick={toggleTips}>
           <img src={lightbulb} alt="tips" className="coddenter__button-img" />
-        </button>
-        <button className="coddenter__button-tip" onClick={toggleMap}>
-          <img
-            src={map}
-            alt="go to tree hunt map"
-            className="coddenter__button-img-l"
-          />
         </button>
       </div>
       <Selection title={leafTypes.title} choices={leafTypes.choices} />
