@@ -6,13 +6,16 @@ import ChampionMap from './component/ChampionMap/ChampionMap';
 import CodeEnter from './component/CodeEnter/CodeEnter';
 import Home from './component/Home/Home';
 import TreeHunt from './component/TreeHunt/TreeHunt';
-import TreeHuntMap from './component/TreeHuntMap/TreeHuntMap';
 
 function App() {
   const [isTipsOpen, setIsTipsOpen] = useState(false);
+  const [isMapOpen, setIsMapOpen] = useState(false);
   function toggleTips() {
     setIsTipsOpen(!isTipsOpen);
-    console.log('click');
+  }
+
+  function toggleMap() {
+    setIsMapOpen(!isMapOpen);
   }
 
   return (
@@ -21,7 +24,6 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
-            <TreeHuntMap />
           </Route>
           <Route path="/champion-map">
             <ChampionMap />
@@ -30,10 +32,20 @@ function App() {
             <About />
           </Route>
           <Route path="/code-enter">
-            <CodeEnter isTipsOpen={isTipsOpen} toggleTips={toggleTips} />
+            <CodeEnter
+              isTipsOpen={isTipsOpen}
+              toggleTips={toggleTips}
+              isMapOpen={isMapOpen}
+              toggleMap={toggleMap}
+            />
           </Route>
           <Route path="/treehunt">
-            <TreeHunt toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
+            <TreeHunt
+              toggleTips={toggleTips}
+              isTipsOpen={isTipsOpen}
+              isMapOpen={isMapOpen}
+              toggleMap={toggleMap}
+            />
           </Route>
         </Switch>
       </div>

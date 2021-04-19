@@ -1,3 +1,15 @@
+.treehuntmap {
+  padding: 40px 10px 10px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: max-content;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
 .treehunt__map {
-  height: 100vh;
+  height: 320px;
+  width: 100%;
 }

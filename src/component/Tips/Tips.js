@@ -5,7 +5,7 @@ export default function Tips({ isTipsOpen, toggleTips }) {
   return (
     <section className={isTipsOpen ? 'tips' : 'hidden'}>
       <button className="tips__button-close" onClick={toggleTips}>
-        <img src={close} alt="tips" className="tips__button-img" />
+        <img src={close} alt="close" className="tips__button-img" />
       </button>
       <h1>Tips for Indentifing Trees</h1>
       <ul>

@@ -2,6 +2,13 @@
   color: #fff;
 }
 
+.selection__title {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 10px 2px 0;
+  padding: 0;
+}
+
 .selection__list {
   list-style: none;
   padding: 0;

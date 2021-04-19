@@ -23,6 +23,10 @@
   width: 20px;
 }
 
+.coddenter__button-img-l {
+  width: 30px;
+}
+
 .coddenter__button-tip {
   background-color: transparent;
   width: min-content;
