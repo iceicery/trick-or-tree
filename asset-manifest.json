@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/trick-or-tree/static/css/main.39e1a244.chunk.css",
+    "main.js": "/trick-or-tree/static/js/main.2e595a8b.chunk.js",
+    "main.js.map": "/trick-or-tree/static/js/main.2e595a8b.chunk.js.map",
+    "runtime-main.js": "/trick-or-tree/static/js/runtime-main.47740551.js",
+    "runtime-main.js.map": "/trick-or-tree/static/js/runtime-main.47740551.js.map",
+    "static/js/2.30e608e9.chunk.js": "/trick-or-tree/static/js/2.30e608e9.chunk.js",
+    "static/js/2.30e608e9.chunk.js.map": "/trick-or-tree/static/js/2.30e608e9.chunk.js.map",
+    "static/js/3.91df0da0.chunk.js": "/trick-or-tree/static/js/3.91df0da0.chunk.js",
+    "static/js/3.91df0da0.chunk.js.map": "/trick-or-tree/static/js/3.91df0da0.chunk.js.map",
+    "index.html": "/trick-or-tree/index.html",
+    "static/css/main.39e1a244.chunk.css.map": "/trick-or-tree/static/css/main.39e1a244.chunk.css.map",
+    "static/js/2.30e608e9.chunk.js.LICENSE.txt": "/trick-or-tree/static/js/2.30e608e9.chunk.js.LICENSE.txt",
+    "static/media/ChampionCard.css": "/trick-or-tree/static/media/kid.292ca951.PNG",
+    "static/media/lightbulb-solid.8d62fb45.svg": "/trick-or-tree/static/media/lightbulb-solid.8d62fb45.svg",
+    "static/media/map-marked.b7194aaf.svg": "/trick-or-tree/static/media/map-marked.b7194aaf.svg",
+    "static/media/smooth-leaf.66a0929d.PNG": "/trick-or-tree/static/media/smooth-leaf.66a0929d.PNG",
+    "static/media/times-solid.ea7c95d7.svg": "/trick-or-tree/static/media/times-solid.ea7c95d7.svg",
+    "static/media/treelogoW.b214c2ee.png": "/trick-or-tree/static/media/treelogoW.b214c2ee.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47740551.js",
+    "static/js/2.30e608e9.chunk.js",
+    "static/css/main.39e1a244.chunk.css",
+    "static/js/main.2e595a8b.chunk.js"
+  ]
+}
