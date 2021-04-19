@@ -2,6 +2,7 @@ import { useState, React } from 'react';
 import './CodeEnter.css';
 import lightbulb from '../../images/lightbulb-solid.svg';
 import Tips from '../Tips/Tips';
+import { Link } from 'react-router-dom';
 
 export default function CodeEnter({ isTipsOpen, toggleTips }) {
   console.log(isTipsOpen);
@@ -89,6 +90,9 @@ export default function CodeEnter({ isTipsOpen, toggleTips }) {
           onChange={handleChange}
         />
       </form>
+      <Link to="/TreeHunt">
+        <button className="codeenter__button">GO</button>
+      </Link>
     </section>
   );
 }

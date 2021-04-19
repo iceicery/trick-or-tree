@@ -51,3 +51,19 @@
   font-size: 20px;
   text-align: center;
 }
+
+.codeenter__button {
+  margin: 30px;
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+  border: #fff solid 0.8px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.codeenter__button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: rgba(0, 0, 0, 0.7) solid 0.8px;
+}

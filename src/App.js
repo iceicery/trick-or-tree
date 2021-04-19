@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState, React } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import About from './component/About/About';
 import ChampionMap from './component/ChampionMap/ChampionMap';
 import CodeEnter from './component/CodeEnter/CodeEnter';
 import Home from './component/Home/Home';
-import Tips from './component/Tips/Tips';
 import TreeHunt from './component/TreeHunt/TreeHunt';
 
 function App() {
@@ -15,14 +15,27 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Home />
-      <ChampionMap />
-      <About />
-      <CodeEnter isTipsOpen={isTipsOpen} toggleTips={toggleTips} />
-      <Tips />
-      <TreeHunt toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/champion-map">
+            <ChampionMap />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/code-enter">
+            <CodeEnter isTipsOpen={isTipsOpen} toggleTips={toggleTips} />
+          </Route>
+          <Route path="/treehunt">
+            <TreeHunt toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

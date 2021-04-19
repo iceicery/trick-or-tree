@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './About.css';
 
 export default function About() {
@@ -8,16 +9,20 @@ export default function About() {
         Alabama has over 140 state champion trees on the books and is home to
         four national champions. Go to the champion tree map to explore them.
       </p>
-      <button className="home__button home__button-2">
-        AL Champion Trees Map
-      </button>
+      <Link to="/champion-map">
+        <button className="home__button home__button-2">
+          AL Champion Trees Map
+        </button>
+      </Link>
       <p>
         Want to know more about your neiborhood alabama native trees? Go to the
         Neiborhood Tree hunt! Find the tree with QR tag, observe with us and
         identify the tree. You could know more about them and earn badges.You
         could be a dendrologist.
       </p>
-      <button className="home__button home__button-3">Local Tree Hunt</button>
+      <Link to="/code-enter">
+        <button className="home__button home__button-3">Local Tree Hunt</button>
+      </Link>
     </section>
   );
 }
