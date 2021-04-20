@@ -1,7 +1,9 @@
 .treehunt {
   background-color: #a5661f;
   height: 100vh;
+  width: 100vw;
   position: relative;
+  overflow: hidden;
 }
 
 .treehunt__title-box {
@@ -13,4 +15,49 @@
 
 .treehunt__title {
   color: #fff;
+}
+
+.treehunt__container {
+  background-color: #a5661f;
+  width: 200vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.treehunt__items {
+  position: relative;
+}
+
+.treehunt__button {
+  position: absolute;
+  bottom: 0;
+  right: calc(50% - 7.5px);
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.treehunt__button-img {
+  width: 15px;
+}
+
+.treehunt__button-check {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  padding: 8px;
+  background-color: transparent;
+  border: solid #fff 0.5px;
+  color: #fff;
+}
+
+.treehunt__button-check:hover {
+  cursor: pointer;
+  background-color: #000;
+  border: solid #000 0.5px;
 }
