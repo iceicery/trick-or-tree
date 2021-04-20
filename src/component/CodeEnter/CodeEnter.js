@@ -43,7 +43,6 @@ export default function CodeEnter({
   return (
     <section className="codeenter">
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
-      <TreeHuntMap isMapOpen={isMapOpen} toggleMap={toggleMap} />
       <h2 className="codeenter__title">
         <span className="codeenter__cap">Welcome! </span>Get ready to indentify
         the tree! You could get tips by clicking lightbulb button.
@@ -58,13 +57,17 @@ export default function CodeEnter({
       <h2 className="codeenter__title">
         You could get tree hunt map by clicking map button.
       </h2>
-      <button className="coddenter__button-tip" onClick={toggleMap}>
+      <Link
+        to="/treehunt-map"
+        className="coddenter__button-tip"
+        onClick={toggleMap}
+      >
         <img
           src={map}
           alt="go to tree hunt map"
           className="coddenter__button-img-l"
         />
-      </button>
+      </Link>
       <h2 className="codeenter__title">Enter Four Digit Code</h2>
       <form className="codeenter__form">
         <input

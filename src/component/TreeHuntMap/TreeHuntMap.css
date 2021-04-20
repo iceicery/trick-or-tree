@@ -1,15 +1,24 @@
 .treehuntmap {
-  padding: 40px 10px 10px;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  height: max-content;
+  position: relative;
+  margin: 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .treehunt__map {
-  height: 320px;
-  width: 100%;
+  margin-top: 30px;
+  height: 80vh;
+}
+
+.treehuntmap__button-close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background-color: #fff;
+  border: #fff;
+}
+
+.treehuntmap__button-close:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
