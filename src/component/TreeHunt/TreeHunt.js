@@ -2,7 +2,7 @@ import './TreeHunt.css';
 import lightbulb from '../../images/lightbulb-solid.svg';
 import Tips from '../Tips/Tips';
 import Selection from '../Selection/Selection';
-import { leafType, leafEdge } from '../../data/LeafClass';
+import { leafType, leafEdge, leafArrange } from '../../data/LeafClass';
 
 export default function TreeHunt({ toggleTips, isTipsOpen }) {
   return (
@@ -16,6 +16,11 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
       </div>
       <Selection title={leafType.title} choices={leafType.choices} n={4} />
       <Selection title={leafEdge.title} choices={leafEdge.choices} n={6} />
+      <Selection
+        title={leafArrange.title}
+        choices={leafArrange.choices}
+        n={2}
+      />
     </section>
   );
 }
