@@ -13,6 +13,7 @@ import {
 import { useState } from 'react';
 
 export default function TreeHunt({ toggleTips, isTipsOpen }) {
+  const [selected, setSelected] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSelectPage = 2;
 
@@ -32,6 +33,13 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
     setCurrentIndex(currentIndex - 1);
   }
 
+  function handleSelect(newselect) {
+    setSelected([...selected, newselect]);
+  }
+  function handleUnselect(unselectItem) {
+    setSelected(selected.filter((i) => i !== unselectItem));
+  }
+
   return (
     <section className="treehunt">
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
@@ -48,12 +56,29 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
         }}
       >
         <div className="treehunt__items">
-          <Selection title={leafType.title} choices={leafType.choices} n={4} />
-          <Selection title={leafEdge.title} choices={leafEdge.choices} n={6} />
+          <Selection
+            title={leafType.title}
+            choices={leafType.choices}
+            n={4}
+            selected={selected}
+            handleSelect={handleSelect}
+            handleUnselect={handleUnselect}
+          />
+          <Selection
+            title={leafEdge.title}
+            choices={leafEdge.choices}
+            n={6}
+            selected={selected}
+            handleSelect={handleSelect}
+            handleUnselect={handleUnselect}
+          />
           <Selection
             title={leafArrange.title}
             choices={leafArrange.choices}
             n={2}
+            selected={selected}
+            handleSelect={handleSelect}
+            handleUnselect={handleUnselect}
           />
           <button className="treehunt__button" onClick={moveRight}>
             Next
@@ -69,6 +94,9 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
             title={leafShape.title}
             choices={leafShape.choices}
             n={4}
+            selected={selected}
+            handleSelect={handleSelect}
+            handleUnselect={handleUnselect}
           />
           <button className="treehunt__button" onClick={moveLeft}>
             <img src={left} alt="next left" className="treehunt__button-img" />
