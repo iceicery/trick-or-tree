@@ -1,39 +1,10 @@
 import './TreeHunt.css';
 import lightbulb from '../../images/lightbulb-solid.svg';
-import map from '../../images/map-marked.svg';
 import Tips from '../Tips/Tips';
-import smooth from '../../images/smooth-leaf.PNG';
 import Selection from '../Selection/Selection';
-import TreeHuntMap from '../TreeHuntMap/TreeHuntMap';
+import { leafType, leafEdge } from '../../data/LeafClass';
 
-const leafTypes = {
-  title: 'Leaf Type',
-  choices: [
-    {
-      image: smooth,
-      description: 'Smooth',
-    },
-    {
-      image: smooth,
-      description: 'Smooth',
-    },
-    {
-      image: smooth,
-      description: 'Smooth',
-    },
-    {
-      image: smooth,
-      description: 'Smooth',
-    },
-  ],
-};
-
-export default function TreeHunt({
-  toggleTips,
-  isTipsOpen,
-  toggleMap,
-  isMapOpen,
-}) {
+export default function TreeHunt({ toggleTips, isTipsOpen }) {
   return (
     <section className="treehunt">
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
@@ -43,7 +14,8 @@ export default function TreeHunt({
           <img src={lightbulb} alt="tips" className="coddenter__button-img" />
         </button>
       </div>
-      <Selection title={leafTypes.title} choices={leafTypes.choices} />
+      <Selection title={leafType.title} choices={leafType.choices} n={4} />
+      <Selection title={leafEdge.title} choices={leafEdge.choices} n={6} />
     </section>
   );
 }
