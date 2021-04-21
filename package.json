@@ -1,5 +1,6 @@
 {
-  "name": "trick-or-trees",
+  "name": "trick-or-tree",
+  "homepage": "https://iceicery.github.io/trick-or-tree",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
