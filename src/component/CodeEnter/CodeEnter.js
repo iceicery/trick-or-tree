@@ -4,24 +4,25 @@ import lightbulb from '../../images/lightbulb-solid.svg';
 import map from '../../images/map-marked.svg';
 import Tips from '../Tips/Tips';
 import { Link } from 'react-router-dom';
-import TreeHuntMap from '../TreeHuntMap/TreeHuntMap';
+import { treepins } from '../../data/TreeHuntMap';
+const ssnAry = [];
+treepins.map((item) => ssnAry.push(item.code));
 
-export default function CodeEnter({
-  isTipsOpen,
-  toggleTips,
-  isMapOpen,
-  toggleMap,
-}) {
-  console.log(isTipsOpen);
+export default function CodeEnter({ isTipsOpen, toggleTips, toggleMap }) {
   const numOfFields = 4;
-  const [ssnValues, setValue] = useState({
-    ssn1: '',
-    ssn2: '',
-    ssn3: '',
-  });
-  console.log(ssnValues);
+  const [ssnValues, setValue] = useState([]);
+  const [tree, setTree] = useState([]);
+  function arrayEquals(a, b) {
+    return (
+      Array.isArray(a) &&
+      Array.isArray(b) &&
+      a.length === b.length &&
+      a.every((val, index) => val === b[index])
+    );
+  }
+  const isValid = ssnAry.some((item) => arrayEquals(item, ssnValues));
 
-  const handleChange = (e) => {
+  function handleChange(e) {
     const { maxLength, value, name } = e.target;
     const [fieldName, fieldIndex] = name.split('-');
     if (value.length >= maxLength) {
@@ -34,12 +35,26 @@ export default function CodeEnter({
         }
       }
     }
-    setValue({
-      ...value,
-      [`ssn${fieldIndex}`]: value,
-    });
-  };
-  console.log(isMapOpen);
+    setValue([...ssnValues, value]);
+  }
+
+  function handleReset() {
+    setValue([]);
+    [1, 2, 3, 4].map(
+      (i) => (document.querySelector(`input[name=ssn-${i}]`).value = '')
+    );
+  }
+
+  function handleGo() {
+    const oneTree = treepins.filter((treepin) =>
+      arrayEquals(treepin.code, ssnValues)
+    );
+    console.log(oneTree);
+    setTree([1]);
+  }
+  console.log(ssnValues);
+  console.log(tree);
+
   return (
     <section className="codeenter">
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
@@ -115,8 +130,22 @@ export default function CodeEnter({
           onChange={handleChange}
         />
       </form>
+      <div className={isValid ? 'hidden' : 'codeenter__error'}>
+        <div className="codeenter__arrow-up"></div>
+        Please Enter Valid Code.
+      </div>
+      <button className="codeenter__button" onClick={handleReset}>
+        Reset
+      </button>
+
       <Link to="/TreeHunt">
-        <button className="codeenter__button">GO</button>
+        <button
+          className="codeenter__button"
+          disabled={!isValid}
+          onClick={handleGo}
+        >
+          GO
+        </button>
       </Link>
     </section>
   );

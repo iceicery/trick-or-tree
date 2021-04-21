@@ -1,7 +1,9 @@
 import './TreeHunt.css';
 import lightbulb from '../../images/lightbulb-solid.svg';
+import microscope from '../../images/microscope.svg';
 import left from '../../images/left.svg';
 import right from '../../images/right.svg';
+import medal from '../../images/medal.svg';
 import Tips from '../Tips/Tips';
 import Selection from '../Selection/Selection';
 import {
@@ -11,11 +13,22 @@ import {
   leafShape,
 } from '../../data/LeafClass';
 import { useState } from 'react';
+import Result from '../Result/Result';
 
 export default function TreeHunt({ toggleTips, isTipsOpen }) {
   const [selected, setSelected] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSelectPage = 2;
+  const [isResultOpen, setIsResultOpen] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+
+  function toggleResultOpen() {
+    setIsResultOpen(!isResultOpen);
+  }
+
+  function checkResult() {
+    toggleResultOpen();
+  }
 
   function moveRight() {
     if (currentIndex >= totalSelectPage - 1) {
@@ -43,6 +56,28 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
   return (
     <section className="treehunt">
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
+      {isCorrect ? (
+        <Result
+          text="Great observe! You identfy all the items and find:"
+          plant={leafShape.title}
+          image={medal}
+          alt="medal"
+          toggleResultOpen={toggleResultOpen}
+          isResultOpen={isResultOpen}
+        >
+          <button className="result__button">Get Badge</button>
+        </Result>
+      ) : (
+        <Result
+          text="Try again, you can do it."
+          plant={`Double check the ${leafShape.title}`}
+          image={microscope}
+          alt="microscope"
+          toggleResultOpen={toggleResultOpen}
+          isResultOpen={isResultOpen}
+        ></Result>
+      )}
+
       <div className="treehunt__title-box">
         <h2 className="treehunt__title">Pick the best one</h2>
         <button className="coddenter__button-tip" onClick={toggleTips}>
@@ -102,7 +137,9 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
             <img src={left} alt="next left" className="treehunt__button-img" />
             Back
           </button>
-          <button className="treehunt__button-check">Check</button>
+          <button className="treehunt__button-check" onClick={checkResult}>
+            Check
+          </button>
         </div>
       </div>
     </section>
