@@ -15,12 +15,14 @@ import {
 import { useState } from 'react';
 import Result from '../Result/Result';
 
-export default function TreeHunt({ toggleTips, isTipsOpen }) {
+export default function TreeHunt({ toggleTips, isTipsOpen, tree }) {
   const [selected, setSelected] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSelectPage = 2;
   const [isResultOpen, setIsResultOpen] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  console.log(tree.class);
+  console.log(selected);
 
   function toggleResultOpen() {
     setIsResultOpen(!isResultOpen);
@@ -28,7 +30,16 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
 
   function checkResult() {
     toggleResultOpen();
+    if (tree.class.length !== selected.length) {
+      setIsCorrect(false);
+      return;
+    } else if (!tree.class.some((i) => selected.includes(i))) {
+      setIsCorrect(false);
+      return;
+    }
+    setIsCorrect(true);
   }
+  console.log(isCorrect);
 
   function moveRight() {
     if (currentIndex >= totalSelectPage - 1) {
@@ -59,7 +70,7 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
       {isCorrect ? (
         <Result
           text="Great observe! You identfy all the items and find:"
-          plant={leafShape.title}
+          plant={tree.name}
           image={medal}
           alt="medal"
           toggleResultOpen={toggleResultOpen}
@@ -69,8 +80,7 @@ export default function TreeHunt({ toggleTips, isTipsOpen }) {
         </Result>
       ) : (
         <Result
-          text="Try again, you can do it."
-          plant={`Double check the ${leafShape.title}`}
+          text="Try again, you can do it. Pick only one of each."
           image={microscope}
           alt="microscope"
           toggleResultOpen={toggleResultOpen}

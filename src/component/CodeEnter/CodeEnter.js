@@ -8,10 +8,16 @@ import { treepins } from '../../data/TreeHuntMap';
 const ssnAry = [];
 treepins.map((item) => ssnAry.push(item.code));
 
-export default function CodeEnter({ isTipsOpen, toggleTips, toggleMap }) {
+export default function CodeEnter({
+  isTipsOpen,
+  toggleTips,
+  toggleMap,
+  tree,
+  handleTree,
+}) {
   const numOfFields = 4;
   const [ssnValues, setValue] = useState([]);
-  const [tree, setTree] = useState([]);
+
   function arrayEquals(a, b) {
     return (
       Array.isArray(a) &&
@@ -49,11 +55,8 @@ export default function CodeEnter({ isTipsOpen, toggleTips, toggleMap }) {
     const oneTree = treepins.filter((treepin) =>
       arrayEquals(treepin.code, ssnValues)
     );
-    console.log(oneTree);
-    setTree([1]);
+    handleTree(oneTree[0]);
   }
-  console.log(ssnValues);
-  console.log(tree);
 
   return (
     <section className="codeenter">

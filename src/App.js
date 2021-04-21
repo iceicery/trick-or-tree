@@ -11,6 +11,11 @@ import TreeHuntMap from './component/TreeHuntMap/TreeHuntMap';
 function App() {
   const [isTipsOpen, setIsTipsOpen] = useState(false);
   const [isMapOpen, setIsMapOpen] = useState(true);
+  const [tree, setTree] = useState({});
+
+  function handleTree(tree) {
+    setTree(tree);
+  }
   function toggleTips() {
     setIsTipsOpen(!isTipsOpen);
   }
@@ -18,7 +23,7 @@ function App() {
   function toggleMap() {
     setIsMapOpen(!isMapOpen);
   }
-
+  console.log(tree);
   return (
     <Router basename={window.location.pathname || ''}>
       <div className="App">
@@ -41,6 +46,8 @@ function App() {
               toggleTips={toggleTips}
               isMapOpen={isMapOpen}
               toggleMap={toggleMap}
+              tree={tree}
+              handleTree={handleTree}
             />
           </Route>
           <Route path="/treehunt">
@@ -49,6 +56,7 @@ function App() {
               isTipsOpen={isTipsOpen}
               isMapOpen={isMapOpen}
               toggleMap={toggleMap}
+              tree={tree}
             />
           </Route>
         </Switch>
