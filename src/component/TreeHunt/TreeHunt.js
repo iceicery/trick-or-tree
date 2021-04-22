@@ -41,7 +41,7 @@ export default function TreeHunt({
     if (tree.class.length !== selected.length) {
       setIsCorrect(false);
       return;
-    } else if (!tree.class.some((i) => selected.includes(i))) {
+    } else if (tree.class.some((i) => !selected.includes(i))) {
       setIsCorrect(false);
       return;
     }
