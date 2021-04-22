@@ -1,0 +1,25 @@
+.result {
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.result__img {
+  width: 200px;
+}
+
+.result__button {
+  background-color: transparent;
+  border: solid #000 0.5;
+  font-size: 20px;
+  padding: 5px;
+}

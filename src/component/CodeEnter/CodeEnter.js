@@ -3,25 +3,34 @@ import './CodeEnter.css';
 import lightbulb from '../../images/lightbulb-solid.svg';
 import map from '../../images/map-marked.svg';
 import Tips from '../Tips/Tips';
+import home from '../../images/home-w.svg';
+import award from '../../images/award.svg';
 import { Link } from 'react-router-dom';
-import TreeHuntMap from '../TreeHuntMap/TreeHuntMap';
+import { treepins } from '../../data/TreeHuntMap';
+const ssnAry = [];
+treepins.map((item) => ssnAry.push(item.code));
 
 export default function CodeEnter({
   isTipsOpen,
   toggleTips,
-  isMapOpen,
   toggleMap,
+  tree,
+  handleTree,
 }) {
-  console.log(isTipsOpen);
   const numOfFields = 4;
-  const [ssnValues, setValue] = useState({
-    ssn1: '',
-    ssn2: '',
-    ssn3: '',
-  });
-  console.log(ssnValues);
+  const [ssnValues, setValue] = useState([]);
 
-  const handleChange = (e) => {
+  function arrayEquals(a, b) {
+    return (
+      Array.isArray(a) &&
+      Array.isArray(b) &&
+      a.length === b.length &&
+      a.every((val, index) => val === b[index])
+    );
+  }
+  const isValid = ssnAry.some((item) => arrayEquals(item, ssnValues));
+
+  function handleChange(e) {
     const { maxLength, value, name } = e.target;
     const [fieldName, fieldIndex] = name.split('-');
     if (value.length >= maxLength) {
@@ -34,18 +43,32 @@ export default function CodeEnter({
         }
       }
     }
-    setValue({
-      ...value,
-      [`ssn${fieldIndex}`]: value,
-    });
-  };
-  console.log(isMapOpen);
+    setValue([...ssnValues, value]);
+  }
+
+  function handleReset() {
+    setValue([]);
+    [1, 2, 3, 4].map(
+      (i) => (document.querySelector(`input[name=ssn-${i}]`).value = '')
+    );
+  }
+
+  function handleGo() {
+    const oneTree = treepins.filter((treepin) =>
+      arrayEquals(treepin.code, ssnValues)
+    );
+    handleTree(oneTree[0]);
+  }
+
   return (
     <section className="codeenter">
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
+      <Link to="/" className="codeenter__button-home">
+        <img src={home} alt="go home" className="championmap__button-img" />
+      </Link>
       <h2 className="codeenter__title">
         <span className="codeenter__cap">Welcome! </span>Get ready to indentify
-        the tree! You could get tips by clicking lightbulb button.
+        the tree! Click lightbulb to get tips.
       </h2>
       <button className="coddenter__button-tip" onClick={toggleTips}>
         <img
@@ -54,16 +77,18 @@ export default function CodeEnter({
           className="coddenter__button-img"
         />
       </button>
-      <h2 className="codeenter__title">
-        You could get tree hunt map by clicking map button.
-      </h2>
-      <Link
-        to="/treehunt-map"
-        className="coddenter__button-tip"
-        onClick={toggleMap}
-      >
+      <h2 className="codeenter__title">Get tree hunt map.</h2>
+      <Link to="/treehunt-map" className="coddenter__button-tip">
         <img
           src={map}
+          alt="go to tree hunt map"
+          className="coddenter__button-img-l"
+        />
+      </Link>
+      <h2 className="codeenter__title">See badges you earned</h2>
+      <Link to="/badge" className="coddenter__button-tip">
+        <img
+          src={award}
           alt="go to tree hunt map"
           className="coddenter__button-img-l"
         />
@@ -115,9 +140,25 @@ export default function CodeEnter({
           onChange={handleChange}
         />
       </form>
-      <Link to="/TreeHunt">
-        <button className="codeenter__button">GO</button>
-      </Link>
+      <div className={isValid ? 'hidden' : 'codeenter__error'}>
+        <div className="codeenter__arrow-up"></div>
+        Please Enter Valid Code.
+      </div>
+      <div className="codeenter__button-box">
+        <button className="codeenter__button" onClick={handleReset}>
+          Reset
+        </button>
+
+        <Link to="/TreeHunt">
+          <button
+            className="codeenter__button"
+            disabled={!isValid}
+            onClick={handleGo}
+          >
+            GO
+          </button>
+        </Link>
+      </div>
     </section>
   );
 }

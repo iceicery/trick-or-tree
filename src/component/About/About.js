@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
 import './About.css';
+import '../ChampionMap/ChampionMap.css';
+import home from '../../images/home.svg';
 
 export default function About() {
   return (
     <section className="about">
+      <Link to="/" className="about__button-home">
+        <img src={home} alt="go home" className="championmap__button-img" />
+      </Link>
       <h1>About</h1>
       <p>
         Alabama has over 140 state champion trees on the books and is home to

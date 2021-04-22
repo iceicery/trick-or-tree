@@ -1,6 +1,14 @@
+import Item from '../Item/Item';
 import './Selection.css';
 
-export default function Selection({ title, choices, n }) {
+export default function Selection({
+  title,
+  choices,
+  n,
+  selected,
+  handleSelect,
+  handleUnselect,
+}) {
   return (
     <section className="selection">
       <h2 className="selection__title">{title}</h2>
@@ -9,14 +17,13 @@ export default function Selection({ title, choices, n }) {
         style={{ gridTemplateColumns: `repeat(${n},1fr)` }}
       >
         {choices.map((choice, i) => (
-          <li className="selection__list-item" key={i}>
-            <img
-              className="selection__img"
-              src={choice.image}
-              alt={choice.description}
-            />
-            <p className="selection__description">{choice.description}</p>
-          </li>
+          <Item
+            choice={choice}
+            key={i}
+            selected={selected}
+            handleSelect={handleSelect}
+            handleUnselect={handleUnselect}
+          />
         ))}
       </ul>
     </section>
