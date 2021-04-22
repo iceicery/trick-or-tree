@@ -5,18 +5,13 @@ import map from '../../images/map-marked.svg';
 import Tips from '../Tips/Tips';
 import home from '../../images/home-w.svg';
 import award from '../../images/award.svg';
+import redo from '../../images/redo.svg';
 import { Link } from 'react-router-dom';
 import { treepins } from '../../data/TreeHuntMap';
 const ssnAry = [];
 treepins.map((item) => ssnAry.push(item.code));
 
-export default function CodeEnter({
-  isTipsOpen,
-  toggleTips,
-  toggleMap,
-  tree,
-  handleTree,
-}) {
+export default function CodeEnter({ isTipsOpen, toggleTips, handleTree }) {
   const numOfFields = 4;
   const [ssnValues, setValue] = useState([]);
 
@@ -46,7 +41,8 @@ export default function CodeEnter({
     setValue([...ssnValues, value]);
   }
 
-  function handleReset() {
+  function handleReset(event) {
+    event.preventDefault();
     setValue([]);
     [1, 2, 3, 4].map(
       (i) => (document.querySelector(`input[name=ssn-${i}]`).value = '')
@@ -95,70 +91,71 @@ export default function CodeEnter({
       </Link>
       <h2 className="codeenter__title">Enter Four Digit Code</h2>
       <form className="codeenter__form">
-        <input
-          type="text"
-          name="ssn-1"
-          maxLength={1}
-          size="1"
-          min="0"
-          max="9"
-          pattern="[0-9]{1}"
-          className="codeenter__input"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="ssn-2"
-          maxLength={1}
-          size="1"
-          min="0"
-          max="9"
-          pattern="[0-9]{1}"
-          className="codeenter__input"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="ssn-3"
-          maxLength={1}
-          size="1"
-          min="0"
-          max="9"
-          pattern="[0-9]{1}"
-          className="codeenter__input"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="ssn-4"
-          maxLength={1}
-          size="1"
-          min="0"
-          max="9"
-          pattern="[0-9]{1}"
-          className="codeenter__input"
-          onChange={handleChange}
-        />
-      </form>
-      <div className={isValid ? 'hidden' : 'codeenter__error'}>
-        <div className="codeenter__arrow-up"></div>
-        Please Enter Valid Code.
-      </div>
-      <div className="codeenter__button-box">
-        <button className="codeenter__button" onClick={handleReset}>
-          Reset
-        </button>
-
-        <Link to="/TreeHunt">
-          <button
-            className="codeenter__button"
-            disabled={!isValid}
-            onClick={handleGo}
-          >
-            GO
+        <div className="codeenter__input-box">
+          <input
+            type="number"
+            name="ssn-1"
+            maxLength={1}
+            size="1"
+            min="0"
+            max="9"
+            pattern="[0-9]{1}"
+            className="codeenter__input"
+            onChange={handleChange}
+          />
+          <input
+            type="number"
+            name="ssn-2"
+            maxLength={1}
+            size="1"
+            min="0"
+            max="9"
+            pattern="[0-9]{1}"
+            className="codeenter__input"
+            onChange={handleChange}
+          />
+          <input
+            type="number"
+            name="ssn-3"
+            maxLength={1}
+            size="1"
+            min="0"
+            max="9"
+            pattern="[0-9]{1}"
+            className="codeenter__input"
+            onChange={handleChange}
+          />
+          <input
+            type="number"
+            name="ssn-4"
+            maxLength={1}
+            size="1"
+            min="0"
+            max="9"
+            pattern="[0-9]{1}"
+            className="codeenter__input"
+            onChange={handleChange}
+          />
+          <button className="codeenter__button-redo" onClick={handleReset}>
+            <img src={redo} alt="reset the code" style={{ width: 20 }} />
           </button>
-        </Link>
-      </div>
+        </div>
+        <div className="codeenter__go-box">
+          <Link to="/TreeHunt">
+            <button
+              className="codeenter__button"
+              disabled={!isValid}
+              onClick={handleGo}
+            >
+              GO
+            </button>
+          </Link>
+          <div className={isValid ? 'hidden' : 'codeenter__error'}>
+            <div className="codeenter__arrow-up"></div>
+            Enter Valid Code.
+          </div>
+        </div>
+      </form>
     </section>
   );
 }
