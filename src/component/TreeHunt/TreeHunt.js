@@ -31,6 +31,8 @@ export default function TreeHunt({
   const [isCorrect, setIsCorrect] = useState(false);
   console.log(tree.class);
   console.log(selected);
+  console.log(tree);
+  console.log(badges);
 
   function toggleResultOpen() {
     setIsResultOpen(!isResultOpen);

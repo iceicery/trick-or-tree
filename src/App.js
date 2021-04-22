@@ -1,4 +1,4 @@
-import { useState, React } from 'react';
+import { useState, React, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import About from './component/About/About';
@@ -29,6 +29,16 @@ function App() {
   function toggleMap() {
     setIsMapOpen(!isMapOpen);
   }
+
+  useEffect(() => {
+    const badgeCard = JSON.parse(localStorage.getItem('badgeCard'));
+    console.log(badgeCard);
+    if (badgeCard) {
+      setBadges(badgeCard);
+    }
+  }, []);
+  const badgeCard = JSON.parse(localStorage.getItem('badgeCard'));
+  console.log(badgeCard);
 
   return (
     <Router basename={window.location.pathname || ''}>

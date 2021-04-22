@@ -5,8 +5,12 @@ import badge3 from '../../images/badgeO.png';
 import badge4 from '../../images/badgeY.png';
 import home from '../../images/home.svg';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Badge({ badges }) {
+  useEffect(() => {
+    localStorage.setItem('badgeCard', JSON.stringify(badges));
+  }, [badges]);
   function getBadgeImg(i) {
     switch (i % 4) {
       case 0:
