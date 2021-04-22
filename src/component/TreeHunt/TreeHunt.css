@@ -6,6 +6,12 @@
   overflow: hidden;
 }
 
+.treehunt__button-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .treehunt__title-box {
   display: flex;
   justify-content: space-between;

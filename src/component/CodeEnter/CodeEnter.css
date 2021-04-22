@@ -10,6 +10,12 @@
   position: relative;
 }
 
+.codeenter__button-home {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .codeenter__cap {
   font-weight: 800;
 }
@@ -76,10 +82,16 @@
   border-bottom: 10px solid #000;
 }
 
+.codeenter__button-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .codeenter__button {
-  margin: 30px;
+  margin: 8px 0 0;
   width: 100px;
-  padding: 10px;
+  padding: 5px;
   font-size: 20px;
   border: #fff solid 0.8px;
   color: #fff;

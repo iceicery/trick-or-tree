@@ -5,6 +5,7 @@ import left from '../../images/left.svg';
 import right from '../../images/right.svg';
 import medal from '../../images/medal.svg';
 import Tips from '../Tips/Tips';
+import home from '../../images/home-w.svg';
 import Selection from '../Selection/Selection';
 import {
   leafType,
@@ -14,8 +15,15 @@ import {
 } from '../../data/LeafClass';
 import { useState } from 'react';
 import Result from '../Result/Result';
+import { Link } from 'react-router-dom';
 
-export default function TreeHunt({ toggleTips, isTipsOpen, tree }) {
+export default function TreeHunt({
+  toggleTips,
+  isTipsOpen,
+  tree,
+  handleBadge,
+  badges,
+}) {
   const [selected, setSelected] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSelectPage = 2;
@@ -38,6 +46,10 @@ export default function TreeHunt({ toggleTips, isTipsOpen, tree }) {
       return;
     }
     setIsCorrect(true);
+  }
+
+  function getBadge() {
+    handleBadge(tree);
   }
   console.log(isCorrect);
 
@@ -76,7 +88,11 @@ export default function TreeHunt({ toggleTips, isTipsOpen, tree }) {
           toggleResultOpen={toggleResultOpen}
           isResultOpen={isResultOpen}
         >
-          <button className="result__button">Get Badge</button>
+          <Link to="/badge">
+            <button className="result__button" onClick={getBadge}>
+              Get Badge
+            </button>
+          </Link>
         </Result>
       ) : (
         <Result
@@ -90,9 +106,14 @@ export default function TreeHunt({ toggleTips, isTipsOpen, tree }) {
 
       <div className="treehunt__title-box">
         <h2 className="treehunt__title">Pick the best one</h2>
-        <button className="coddenter__button-tip" onClick={toggleTips}>
-          <img src={lightbulb} alt="tips" className="coddenter__button-img" />
-        </button>
+        <div className="treehunt__button-box">
+          <button className="coddenter__button-tip" onClick={toggleTips}>
+            <img src={lightbulb} alt="tips" className="coddenter__button-img" />
+          </button>
+          <Link to="/" className="treehunt__button-home">
+            <img src={home} alt="go home" className="championmap__button-img" />
+          </Link>
+        </div>
       </div>
       <div
         className="treehunt__container"
