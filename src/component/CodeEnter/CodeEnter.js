@@ -92,6 +92,9 @@ export default function CodeEnter({ isTipsOpen, toggleTips, handleTree }) {
       <h2 className="codeenter__title">Enter Four Digit Code</h2>
       <form className="codeenter__form">
         <div className="codeenter__input-box">
+          <button className="codeenter__button-redo" onClick={handleReset}>
+            <img src={redo} alt="reset the code" style={{ width: 20 }} />
+          </button>
           <input
             type="number"
             name="ssn-1"
@@ -136,11 +139,7 @@ export default function CodeEnter({ isTipsOpen, toggleTips, handleTree }) {
             className="codeenter__input"
             onChange={handleChange}
           />
-          <button className="codeenter__button-redo" onClick={handleReset}>
-            <img src={redo} alt="reset the code" style={{ width: 20 }} />
-          </button>
-        </div>
-        <div className="codeenter__go-box">
+
           <Link to="/TreeHunt">
             <button
               className="codeenter__button"
@@ -150,10 +149,10 @@ export default function CodeEnter({ isTipsOpen, toggleTips, handleTree }) {
               GO
             </button>
           </Link>
-          <div className={isValid ? 'hidden' : 'codeenter__error'}>
-            <div className="codeenter__arrow-up"></div>
-            Enter Valid Code.
-          </div>
+        </div>
+        <div className={isValid ? 'hidden' : 'codeenter__error'}>
+          <div className="codeenter__arrow-up"></div>
+          Please Enter Valid Code.
         </div>
       </form>
     </section>
