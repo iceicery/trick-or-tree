@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/trick-or-tree/static/css/main.649f382e.chunk.css",
-    "main.js": "/trick-or-tree/static/js/main.5a10e88f.chunk.js",
-    "main.js.map": "/trick-or-tree/static/js/main.5a10e88f.chunk.js.map",
+    "main.css": "/trick-or-tree/static/css/main.211a5506.chunk.css",
+    "main.js": "/trick-or-tree/static/js/main.72cd77f8.chunk.js",
+    "main.js.map": "/trick-or-tree/static/js/main.72cd77f8.chunk.js.map",
     "runtime-main.js": "/trick-or-tree/static/js/runtime-main.d469e268.js",
     "runtime-main.js.map": "/trick-or-tree/static/js/runtime-main.d469e268.js.map",
     "static/js/2.755a7a3b.chunk.js": "/trick-or-tree/static/js/2.755a7a3b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.f32033e0.chunk.js": "/trick-or-tree/static/js/3.f32033e0.chunk.js",
     "static/js/3.f32033e0.chunk.js.map": "/trick-or-tree/static/js/3.f32033e0.chunk.js.map",
     "index.html": "/trick-or-tree/index.html",
-    "static/css/main.649f382e.chunk.css.map": "/trick-or-tree/static/css/main.649f382e.chunk.css.map",
+    "static/css/main.211a5506.chunk.css.map": "/trick-or-tree/static/css/main.211a5506.chunk.css.map",
     "static/js/2.755a7a3b.chunk.js.LICENSE.txt": "/trick-or-tree/static/js/2.755a7a3b.chunk.js.LICENSE.txt",
     "static/media/arangement-alternate.fe038689.PNG": "/trick-or-tree/static/media/arangement-alternate.fe038689.PNG",
     "static/media/arangement-opposite.c24d0046.PNG": "/trick-or-tree/static/media/arangement-opposite.c24d0046.PNG",
@@ -33,6 +33,7 @@
     "static/media/map-marked.b7194aaf.svg": "/trick-or-tree/static/media/map-marked.b7194aaf.svg",
     "static/media/medal.464d2ce1.svg": "/trick-or-tree/static/media/medal.464d2ce1.svg",
     "static/media/microscope.82c978f5.svg": "/trick-or-tree/static/media/microscope.82c978f5.svg",
+    "static/media/redo.7448f554.svg": "/trick-or-tree/static/media/redo.7448f554.svg",
     "static/media/right.67c7cff6.svg": "/trick-or-tree/static/media/right.67c7cff6.svg",
     "static/media/shape-bell.ddf468c8.PNG": "/trick-or-tree/static/media/shape-bell.ddf468c8.PNG",
     "static/media/shape-cross.ae66ad59.PNG": "/trick-or-tree/static/media/shape-cross.ae66ad59.PNG",
@@ -57,7 +58,7 @@
   "entrypoints": [
     "static/js/runtime-main.d469e268.js",
     "static/js/2.755a7a3b.chunk.js",
-    "static/css/main.649f382e.chunk.css",
-    "static/js/main.5a10e88f.chunk.js"
+    "static/css/main.211a5506.chunk.css",
+    "static/js/main.72cd77f8.chunk.js"
   ]
 }
