@@ -3,14 +3,13 @@ import './ChampionCard.css';
 export default function ChampionCard({
   img_url,
   name,
-  family,
-  sname,
-  kingdom,
-  Life,
+  subspecies,
+  spread,
   description,
   location,
   circumference,
   height,
+  total_points,
 }) {
   return (
     <div className="championcard">
@@ -21,29 +20,23 @@ export default function ChampionCard({
 
           <div className="championcard__info-box">
             <p className="championcard__info">
-              Location:<span>{location}</span>
+              County:<span>{location}</span>
             </p>
             <p className="championcard__info">
-              Circumference:<span>{circumference}</span>ft
+              Circumference:<span>{circumference}</span> in
             </p>
             <p className="championcard__info">
-              Height:<span>{height}</span>ft
+              Height:<span>{height}</span> ft
             </p>
             <p className="championcard__info">
-              Family:<span>{family}</span>
+              Spread:<span>{spread}</span> ft
             </p>
             <p className="championcard__info">
-              Scienctific name:
-              <br />
-              <span>{sname}</span>
+              Total Points:<span>{total_points}</span>
             </p>
+
             <p className="championcard__info">
-              Kingdom:<span>{kingdom}</span>
-            </p>
-            <p className="championcard__info">
-              Life expectancy:
-              <br />
-              <span>{Life}</span>
+              Subspecies:<span>{subspecies}</span>
             </p>
           </div>
         </div>

@@ -1,7 +1,8 @@
-import { useState, React } from 'react';
+import { useState, React, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import About from './component/About/About';
+import Badge from './component/Badge/Badge';
 import ChampionMap from './component/ChampionMap/ChampionMap';
 import CodeEnter from './component/CodeEnter/CodeEnter';
 import Home from './component/Home/Home';
@@ -11,6 +12,16 @@ import TreeHuntMap from './component/TreeHuntMap/TreeHuntMap';
 function App() {
   const [isTipsOpen, setIsTipsOpen] = useState(false);
   const [isMapOpen, setIsMapOpen] = useState(true);
+  const [tree, setTree] = useState({});
+  const [badges, setBadges] = useState([]);
+
+  function handleTree(tree) {
+    setTree(tree);
+  }
+
+  function handleBadge(newBadge) {
+    setBadges([...badges, newBadge]);
+  }
   function toggleTips() {
     setIsTipsOpen(!isTipsOpen);
   }
@@ -18,6 +29,16 @@ function App() {
   function toggleMap() {
     setIsMapOpen(!isMapOpen);
   }
+
+  useEffect(() => {
+    const badgeCard = JSON.parse(localStorage.getItem('badgeCard'));
+    console.log(badgeCard);
+    if (badgeCard) {
+      setBadges(badgeCard);
+    }
+  }, []);
+  const badgeCard = JSON.parse(localStorage.getItem('badgeCard'));
+  console.log(badgeCard);
 
   return (
     <Router basename={window.location.pathname || ''}>
@@ -41,6 +62,8 @@ function App() {
               toggleTips={toggleTips}
               isMapOpen={isMapOpen}
               toggleMap={toggleMap}
+              tree={tree}
+              handleTree={handleTree}
             />
           </Route>
           <Route path="/treehunt">
@@ -49,7 +72,13 @@ function App() {
               isTipsOpen={isTipsOpen}
               isMapOpen={isMapOpen}
               toggleMap={toggleMap}
+              tree={tree}
+              handleBadge={handleBadge}
+              badges={badges}
             />
+          </Route>
+          <Route path="/badge">
+            <Badge badges={badges} />
           </Route>
         </Switch>
       </div>

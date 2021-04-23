@@ -13,7 +13,8 @@
 }
 
 .championcard__img {
-  width: 50%;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
 }
 
@@ -35,6 +36,7 @@
 }
 
 .championcard__compare-tree {
+  margin-left: 5px;
   background-color: rgb(9, 175, 9);
   width: 15px;
 }
@@ -45,4 +47,5 @@
   width: 10px;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-right: -3px;
 }
