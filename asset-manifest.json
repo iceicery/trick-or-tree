@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/trick-or-tree/static/css/main.0807573f.chunk.css",
-    "main.js": "/trick-or-tree/static/js/main.33bfd547.chunk.js",
-    "main.js.map": "/trick-or-tree/static/js/main.33bfd547.chunk.js.map",
+    "main.css": "/trick-or-tree/static/css/main.8ef06d30.chunk.css",
+    "main.js": "/trick-or-tree/static/js/main.875c3554.chunk.js",
+    "main.js.map": "/trick-or-tree/static/js/main.875c3554.chunk.js.map",
     "runtime-main.js": "/trick-or-tree/static/js/runtime-main.d469e268.js",
     "runtime-main.js.map": "/trick-or-tree/static/js/runtime-main.d469e268.js.map",
     "static/js/2.755a7a3b.chunk.js": "/trick-or-tree/static/js/2.755a7a3b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.f32033e0.chunk.js": "/trick-or-tree/static/js/3.f32033e0.chunk.js",
     "static/js/3.f32033e0.chunk.js.map": "/trick-or-tree/static/js/3.f32033e0.chunk.js.map",
     "index.html": "/trick-or-tree/index.html",
-    "static/css/main.0807573f.chunk.css.map": "/trick-or-tree/static/css/main.0807573f.chunk.css.map",
+    "static/css/main.8ef06d30.chunk.css.map": "/trick-or-tree/static/css/main.8ef06d30.chunk.css.map",
     "static/js/2.755a7a3b.chunk.js.LICENSE.txt": "/trick-or-tree/static/js/2.755a7a3b.chunk.js.LICENSE.txt",
     "static/media/arangement-alternate.fe038689.PNG": "/trick-or-tree/static/media/arangement-alternate.fe038689.PNG",
     "static/media/arangement-opposite.c24d0046.PNG": "/trick-or-tree/static/media/arangement-opposite.c24d0046.PNG",
@@ -58,7 +58,7 @@
   "entrypoints": [
     "static/js/runtime-main.d469e268.js",
     "static/js/2.755a7a3b.chunk.js",
-    "static/css/main.0807573f.chunk.css",
-    "static/js/main.33bfd547.chunk.js"
+    "static/css/main.8ef06d30.chunk.css",
+    "static/js/main.875c3554.chunk.js"
   ]
 }
