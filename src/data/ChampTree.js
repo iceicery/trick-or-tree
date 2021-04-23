@@ -1,5 +1,6 @@
 export const champTrees = {
   type: 'FeatureCollection',
+  crs: { type: 'name', properties: { name: 'urn:ogc:def:crs:OGC:1.3:CRS84' } },
   features: [
     {
       type: 'Feature',
@@ -47,7 +48,7 @@ export const champTrees = {
         sci_lc: 'liriodendron tulipifera',
         file_id: 60245.0,
         image_path:
-          'dataset/images/lab/liriodendron_tulipifera/pi0068-01-1.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/liriodendron_tulipifera/pi0068-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/liriodendron_tulipifera/pi0068-01-1.png',
         species_y: 'Liriodendron tulipifera',
@@ -188,7 +189,8 @@ export const champTrees = {
         nominator: 'Doug Ezzell',
         sci_lc: 'cercis canadensis',
         file_id: 58737.0,
-        image_path: 'dataset/images/lab/cercis_canadensis/pi0001-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/cercis_canadensis/pi0001-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/cercis_canadensis/pi0001-01-1.png',
         species_y: 'Cercis canadensis',
@@ -217,7 +219,8 @@ export const champTrees = {
         nominator: 'William C. Carrigan',
         sci_lc: 'juniperus virginiana',
         file_id: 58838.0,
-        image_path: 'dataset/images/lab/juniperus_virginiana/pi1016-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/juniperus_virginiana/pi1016-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/juniperus_virginiana/pi1016-01-1.png',
         species_y: 'Juniperus virginiana',
@@ -275,7 +278,7 @@ export const champTrees = {
         sci_lc: 'sassafras albidum',
         file_id: 4593.0,
         image_path:
-          'dataset/images/field/sassafras_albidum/1249061039_0000.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/sassafras_albidum/1249061039_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/sassafras_albidum/1249061039_0000.png',
         species_y: 'Sassafras albidum',
@@ -305,7 +308,7 @@ export const champTrees = {
         sci_lc: 'sassafras albidum',
         file_id: 4593.0,
         image_path:
-          'dataset/images/field/sassafras_albidum/1249061039_0000.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/sassafras_albidum/1249061039_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/sassafras_albidum/1249061039_0000.png',
         species_y: 'Sassafras albidum',
@@ -390,7 +393,8 @@ export const champTrees = {
         nominator: 'Josh Angel & Tony Avery',
         sci_lc: 'oxydendrum arboreum',
         file_id: 60690.0,
-        image_path: 'dataset/images/lab/oxydendrum_arboreum/wb1106-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/oxydendrum_arboreum/wb1106-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/oxydendrum_arboreum/wb1106-01-1.png',
         species_y: 'Oxydendrum arboreum',
@@ -532,7 +536,7 @@ export const champTrees = {
         sci_lc: 'liquidambar styraciflua',
         file_id: 59776.0,
         image_path:
-          'dataset/images/lab/liquidambar_styraciflua/wb1094-01-1.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/liquidambar_styraciflua/wb1094-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/liquidambar_styraciflua/wb1094-01-1.png',
         species_y: 'Liquidambar styraciflua',
@@ -590,7 +594,7 @@ export const champTrees = {
         sci_lc: 'platanus occidentalis',
         file_id: 4309.0,
         image_path:
-          'dataset/images/field/platanus_occidentalis/1248105841_0000.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/platanus_occidentalis/1248105841_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/platanus_occidentalis/1248105841_0000.png',
         species_y: 'Platanus occidentalis',
@@ -675,7 +679,8 @@ export const champTrees = {
         nominator: 'B. F. Walden',
         sci_lc: 'juglans nigra',
         file_id: 4543.0,
-        image_path: 'dataset/images/field/juglans_nigra/1249060272_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/juglans_nigra/1249060272_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/juglans_nigra/1249060272_0000.png',
         species_y: 'Juglans nigra',
@@ -732,7 +737,8 @@ export const champTrees = {
         nominator: 'Katie McKeen',
         sci_lc: 'quercus nigra',
         file_id: 71805.0,
-        image_path: 'dataset/images/lab/quercus_nigra/wb1223-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_nigra/wb1223-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/quercus_nigra/wb1223-01-1.png',
         species_y: 'Quercus nigra',
         source: 'lab',
@@ -760,7 +766,8 @@ export const champTrees = {
         nominator: 'Darryl Rutland',
         sci_lc: 'quercus alba',
         file_id: 4833.0,
-        image_path: 'dataset/images/field/quercus_alba/1249580462_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/quercus_alba/1249580462_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/quercus_alba/1249580462_0000.png',
         species_y: 'Quercus alba',
@@ -789,7 +796,8 @@ export const champTrees = {
         nominator: 'David R. Shaw',
         sci_lc: 'quercus phellos',
         file_id: 4838.0,
-        image_path: 'dataset/images/field/quercus_phellos/1249580491_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/quercus_phellos/1249580491_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/quercus_phellos/1249580491_0000.png',
         species_y: 'Quercus phellos',
@@ -818,7 +826,8 @@ export const champTrees = {
         nominator: 'Elliott Glass- N',
         sci_lc: 'quercus phellos',
         file_id: 4838.0,
-        image_path: 'dataset/images/field/quercus_phellos/1249580491_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/quercus_phellos/1249580491_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/quercus_phellos/1249580491_0000.png',
         species_y: 'Quercus phellos',
@@ -847,7 +856,8 @@ export const champTrees = {
         nominator: 'Tom Warren- N',
         sci_lc: 'quercus phellos',
         file_id: 4838.0,
-        image_path: 'dataset/images/field/quercus_phellos/1249580491_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/quercus_phellos/1249580491_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/quercus_phellos/1249580491_0000.png',
         species_y: 'Quercus phellos',
@@ -876,7 +886,8 @@ export const champTrees = {
         nominator: 'Eleanor Ward',
         sci_lc: 'maclura pomifera',
         file_id: 4370.0,
-        image_path: 'dataset/images/field/maclura_pomifera/1248106412_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/maclura_pomifera/1248106412_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/maclura_pomifera/1248106412_0000.png',
         species_y: 'Maclura pomifera',
@@ -905,7 +916,8 @@ export const champTrees = {
         nominator: 'James Morris, Jr.',
         sci_lc: 'asimina triloba',
         file_id: 70491.0,
-        image_path: 'dataset/images/lab/asimina_triloba/pi2177-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/asimina_triloba/pi2177-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/asimina_triloba/pi2177-01-1.png',
         species_y: 'Asimina triloba',
         source: 'lab',
@@ -989,7 +1001,8 @@ export const champTrees = {
         nominator: 'David Pettus',
         sci_lc: 'diospyros virginiana',
         file_id: 77937.0,
-        image_path: 'dataset/images/lab/diospyros_virginiana/pi0196-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/diospyros_virginiana/pi0196-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/diospyros_virginiana/pi0196-01-1.png',
         species_y: 'Diospyros virginiana',
@@ -1018,7 +1031,8 @@ export const champTrees = {
         nominator: 'Billy Miles',
         sci_lc: 'pinus taeda',
         file_id: 66678.0,
-        image_path: 'dataset/images/lab/pinus_taeda/wb1148-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/pinus_taeda/wb1148-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/pinus_taeda/wb1148-01-1.png',
         species_y: 'Pinus taeda',
         source: 'lab',
@@ -1102,7 +1116,8 @@ export const champTrees = {
         nominator: 'Buddy Darwin',
         sci_lc: 'pinus echinata',
         file_id: 64377.0,
-        image_path: 'dataset/images/lab/pinus_echinata/wb1250-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/pinus_echinata/wb1250-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/pinus_echinata/wb1250-01-1.png',
         species_y: 'Pinus echinata',
         source: 'lab',
@@ -1214,7 +1229,8 @@ export const champTrees = {
         nominator: 'Dan Green',
         sci_lc: 'pinus virginiana',
         file_id: 66918.0,
-        image_path: 'dataset/images/lab/pinus_virginiana/wb1481-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/pinus_virginiana/wb1481-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/pinus_virginiana/wb1481-01-1.png',
         species_y: 'Pinus virginiana',
@@ -1327,7 +1343,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'quercus muehlenbergii',
         file_id: 71685.0,
-        image_path: 'dataset/images/lab/quercus_muehlenbergii/wb1529-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_muehlenbergii/wb1529-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_muehlenbergii/wb1529-01-1.png',
         species_y: 'Quercus muehlenbergii',
@@ -1496,7 +1513,8 @@ export const champTrees = {
         nominator: 'Donald E. Nelson',
         sci_lc: 'quercus virginiana',
         file_id: 72681.0,
-        image_path: 'dataset/images/lab/quercus_virginiana/wb1373-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_virginiana/wb1373-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_virginiana/wb1373-01-1.png',
         species_y: 'Quercus virginiana',
@@ -1553,7 +1571,8 @@ export const champTrees = {
         nominator: 'Tony Avery',
         sci_lc: 'quercus rubra',
         file_id: 4386.0,
-        image_path: 'dataset/images/field/quercus_rubra/1248106564_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/quercus_rubra/1248106564_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/quercus_rubra/1248106564_0000.png',
         species_y: 'Quercus rubra',
@@ -1638,7 +1657,8 @@ export const champTrees = {
         nominator: 'Karen Smith',
         sci_lc: 'quercus stellata',
         file_id: 72441.0,
-        image_path: 'dataset/images/lab/quercus_stellata/wb1214-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_stellata/wb1214-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_stellata/wb1214-01-1.png',
         species_y: 'Quercus stellata',
@@ -1751,7 +1771,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'quercus coccinea',
         file_id: 4558.0,
-        image_path: 'dataset/images/field/quercus_coccinea/1249060512_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/quercus_coccinea/1249060512_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/quercus_coccinea/1249060512_0000.png',
         species_y: 'Quercus coccinea',
@@ -1781,7 +1802,7 @@ export const champTrees = {
         sci_lc: 'quercus imbricaria',
         file_id: 4578.0,
         image_path:
-          'dataset/images/field/quercus_imbricaria/1249060909_0000.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/quercus_imbricaria/1249060909_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/quercus_imbricaria/1249060909_0000.png',
         species_y: 'Quercus imbricaria',
@@ -1810,7 +1831,8 @@ export const champTrees = {
         nominator: 'Chris Chambers',
         sci_lc: 'quercus shumardii',
         file_id: 72321.0,
-        image_path: 'dataset/images/lab/quercus_shumardii/ny1156-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_shumardii/ny1156-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_shumardii/ny1156-01-1.png',
         species_y: 'Quercus shumardii',
@@ -1839,7 +1861,8 @@ export const champTrees = {
         nominator: 'Silas Bonner',
         sci_lc: 'quercus falcata',
         file_id: 70598.0,
-        image_path: 'dataset/images/lab/quercus_falcata/wb1121-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_falcata/wb1121-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/quercus_falcata/wb1121-01-1.png',
         species_y: 'Quercus falcata',
         source: 'lab',
@@ -1867,7 +1890,8 @@ export const champTrees = {
         nominator: 'Jake Holloway',
         sci_lc: 'quercus michauxii',
         file_id: 71333.0,
-        image_path: 'dataset/images/lab/quercus_michauxii/wb1025-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_michauxii/wb1025-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_michauxii/wb1025-01-1.png',
         species_y: 'Quercus michauxii',
@@ -1896,7 +1920,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'quercus bicolor',
         file_id: 4583.0,
-        image_path: 'dataset/images/field/quercus_bicolor/1249060941_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/quercus_bicolor/1249060941_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/quercus_bicolor/1249060941_0000.png',
         species_y: 'Quercus bicolor',
@@ -1925,7 +1950,8 @@ export const champTrees = {
         nominator: 'Susan Weber & Layne Vaughan',
         sci_lc: 'magnolia acuminata',
         file_id: 62572.0,
-        image_path: 'dataset/images/lab/magnolia_acuminata/wb1220-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/magnolia_acuminata/wb1220-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/magnolia_acuminata/wb1220-01-1.png',
         species_y: 'Magnolia acuminata',
@@ -1983,7 +2009,7 @@ export const champTrees = {
         sci_lc: 'magnolia grandiflora',
         file_id: 4794.0,
         image_path:
-          'dataset/images/field/magnolia_grandiflora/1249580214_0000.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/magnolia_grandiflora/1249580214_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/magnolia_grandiflora/1249580214_0000.png',
         species_y: 'Magnolia grandiflora',
@@ -2012,7 +2038,8 @@ export const champTrees = {
         nominator: 'Tad M. Zebryk',
         sci_lc: 'magnolia virginiana',
         file_id: 64041.0,
-        image_path: 'dataset/images/lab/magnolia_virginiana/wb1199-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/magnolia_virginiana/wb1199-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/magnolia_virginiana/wb1199-01-1.png',
         species_y: 'Magnolia virginiana',
@@ -2041,7 +2068,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'magnolia tripetala',
         file_id: 63820.0,
-        image_path: 'dataset/images/lab/magnolia_tripetala/wb1616-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/magnolia_tripetala/wb1616-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/magnolia_tripetala/wb1616-01-1.png',
         species_y: 'Magnolia tripetala',
@@ -2070,7 +2098,8 @@ export const champTrees = {
         nominator: 'Bill Tucker',
         sci_lc: 'acer negundo',
         file_id: 69600.0,
-        image_path: 'dataset/images/lab/acer_negundo/pi2025-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/acer_negundo/pi2025-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/acer_negundo/pi2025-01-1.png',
         species_y: 'Acer negundo',
         source: 'lab',
@@ -2154,7 +2183,8 @@ export const champTrees = {
         nominator: 'Joe Mathis Jr.',
         sci_lc: 'acer rubrum',
         file_id: 57299.0,
-        image_path: 'dataset/images/lab/acer_rubrum/pi2388-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/acer_rubrum/pi2388-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/acer_rubrum/pi2388-01-1.png',
         species_y: 'Acer rubrum',
         source: 'lab',
@@ -2182,7 +2212,8 @@ export const champTrees = {
         nominator: 'Adam Ziegenbein & Josh Angel',
         sci_lc: 'acer saccharinum',
         file_id: 57316.0,
-        image_path: 'dataset/images/lab/acer_saccharinum/pi0066-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/acer_saccharinum/pi0066-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/acer_saccharinum/pi0066-01-1.png',
         species_y: 'Acer saccharinum',
@@ -2211,7 +2242,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'acer saccharum',
         file_id: 4396.0,
-        image_path: 'dataset/images/field/acer_saccharum/1248106746_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/acer_saccharum/1248106746_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/acer_saccharum/1248106746_0000.png',
         species_y: 'Acer saccharum',
@@ -2268,7 +2300,8 @@ export const champTrees = {
         nominator: 'Lorenzo Johnson',
         sci_lc: 'morus rubra',
         file_id: 4789.0,
-        image_path: 'dataset/images/field/morus_rubra/1249580175_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/morus_rubra/1249580175_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/morus_rubra/1249580175_0000.png',
         species_y: 'Morus rubra',
@@ -2325,7 +2358,8 @@ export const champTrees = {
         nominator: 'Mr. and Mrs. Chris Gilliand',
         sci_lc: 'quercus velutina',
         file_id: 72561.0,
-        image_path: 'dataset/images/lab/quercus_velutina/wb1445-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_velutina/wb1445-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_velutina/wb1445-01-1.png',
         species_y: 'Quercus velutina',
@@ -2354,7 +2388,8 @@ export const champTrees = {
         nominator: 'David Allen',
         sci_lc: 'quercus velutina',
         file_id: 72561.0,
-        image_path: 'dataset/images/lab/quercus_velutina/wb1445-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_velutina/wb1445-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_velutina/wb1445-01-1.png',
         species_y: 'Quercus velutina',
@@ -2383,7 +2418,8 @@ export const champTrees = {
         nominator: 'Chris Wright',
         sci_lc: 'quercus marilandica',
         file_id: 71085.0,
-        image_path: 'dataset/images/lab/quercus_marilandica/wb1244-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_marilandica/wb1244-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_marilandica/wb1244-01-1.png',
         species_y: 'Quercus marilandica',
@@ -2440,7 +2476,8 @@ export const champTrees = {
         nominator: 'Dr. Douglas T. McGinty',
         sci_lc: 'quercus macrocarpa',
         file_id: 70840.0,
-        image_path: 'dataset/images/lab/quercus_macrocarpa/wb1133-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/quercus_macrocarpa/wb1133-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/quercus_macrocarpa/wb1133-01-1.png',
         species_y: 'Quercus macrocarpa',
@@ -2525,7 +2562,8 @@ export const champTrees = {
         nominator: 'Robert Taylor',
         sci_lc: 'tsuga canadensis',
         file_id: 74633.0,
-        image_path: 'dataset/images/lab/tsuga_canadensis/wb1085-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/tsuga_canadensis/wb1085-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/tsuga_canadensis/wb1085-01-1.png',
         species_y: 'Tsuga canadensis',
@@ -2582,7 +2620,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'carya cordiformis',
         file_id: 70901.0,
-        image_path: 'dataset/images/lab/carya_cordiformis/pi0053-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/carya_cordiformis/pi0053-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/carya_cordiformis/pi0053-01-1.png',
         species_y: 'Carya cordiformis',
@@ -2638,7 +2677,8 @@ export const champTrees = {
         nominator: 'John Goff',
         sci_lc: 'carya tomentosa',
         file_id: 56964.0,
-        image_path: 'dataset/images/lab/carya_tomentosa/wb1091-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/carya_tomentosa/wb1091-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/carya_tomentosa/wb1091-01-1.png',
         species_y: 'Carya tomentosa',
         source: 'lab',
@@ -2694,7 +2734,8 @@ export const champTrees = {
         nominator: 'Gerry Knight- N',
         sci_lc: 'carya glabra',
         file_id: 56513.0,
-        image_path: 'dataset/images/lab/carya_glabra/pi0046-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/carya_glabra/pi0046-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/carya_glabra/pi0046-01-1.png',
         species_y: 'Carya glabra',
         source: 'lab',
@@ -2778,7 +2819,8 @@ export const champTrees = {
         nominator: 'Charles LeCroy',
         sci_lc: 'carya ovata',
         file_id: 56832.0,
-        image_path: 'dataset/images/lab/carya_ovata/wb1076-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/carya_ovata/wb1076-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/carya_ovata/wb1076-01-1.png',
         species_y: 'Carya ovata',
         source: 'lab',
@@ -2806,7 +2848,8 @@ export const champTrees = {
         nominator: 'Scott Morris',
         sci_lc: 'carya ovata',
         file_id: 56832.0,
-        image_path: 'dataset/images/lab/carya_ovata/wb1076-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/carya_ovata/wb1076-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/carya_ovata/wb1076-01-1.png',
         species_y: 'Carya ovata',
         source: 'lab',
@@ -2890,7 +2933,8 @@ export const champTrees = {
         nominator: 'Jeff Abney',
         sci_lc: 'ilex opaca',
         file_id: 4301.0,
-        image_path: 'dataset/images/field/ilex_opaca/1248105728_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/ilex_opaca/1248105728_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/ilex_opaca/1248105728_0000.png',
         species_y: 'Ilex opaca',
@@ -2947,7 +2991,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'ptelea trifoliata',
         file_id: 69010.0,
-        image_path: 'dataset/images/lab/ptelea_trifoliata/pi0003-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/ptelea_trifoliata/pi0003-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/ptelea_trifoliata/pi0003-01-1.png',
         species_y: 'Ptelea trifoliata',
@@ -2976,7 +3021,8 @@ export const champTrees = {
         nominator: 'John McBride',
         sci_lc: 'carpinus caroliniana',
         file_id: 55949.0,
-        image_path: 'dataset/images/lab/carpinus_caroliniana/pi0293-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/carpinus_caroliniana/pi0293-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/carpinus_caroliniana/pi0293-01-1.png',
         species_y: 'Carpinus caroliniana',
@@ -3061,7 +3107,8 @@ export const champTrees = {
         nominator: 'John Goff & Travis Ford',
         sci_lc: 'gleditsia triacanthos',
         file_id: 57771.0,
-        image_path: 'dataset/images/lab/gleditsia_triacanthos/pi1072-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/gleditsia_triacanthos/pi1072-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/gleditsia_triacanthos/pi1072-01-1.png',
         species_y: 'Gleditsia triacanthos',
@@ -3090,7 +3137,8 @@ export const champTrees = {
         nominator: 'Anthony and Tamara Carlisle',
         sci_lc: 'magnolia macrophylla',
         file_id: 63293.0,
-        image_path: 'dataset/images/lab/magnolia_macrophylla/wb1253-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/magnolia_macrophylla/wb1253-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/magnolia_macrophylla/wb1253-01-1.png',
         species_y: 'Magnolia macrophylla',
@@ -3119,7 +3167,8 @@ export const champTrees = {
         nominator: 'John McBride, N',
         sci_lc: 'catalpa bignonioides',
         file_id: 57234.0,
-        image_path: 'dataset/images/lab/catalpa_bignonioides/pi1080-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/catalpa_bignonioides/pi1080-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/catalpa_bignonioides/pi1080-01-1.png',
         species_y: 'Catalpa bignonioides',
@@ -3204,7 +3253,8 @@ export const champTrees = {
         nominator: 'Doug Chapman',
         sci_lc: 'prunus serotina',
         file_id: 4314.0,
-        image_path: 'dataset/images/field/prunus_serotina/1248105888_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/prunus_serotina/1248105888_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/prunus_serotina/1248105888_0000.png',
         species_y: 'Prunus serotina',
@@ -3317,7 +3367,8 @@ export const champTrees = {
         nominator: 'Fred & Lavonia Osborn',
         sci_lc: 'populus deltoides',
         file_id: 67566.0,
-        image_path: 'dataset/images/lab/populus_deltoides/wb1163-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/populus_deltoides/wb1163-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/populus_deltoides/wb1163-01-1.png',
         species_y: 'Populus deltoides',
@@ -3458,7 +3509,8 @@ export const champTrees = {
         nominator: 'Glenn Berry',
         sci_lc: 'cornus florida',
         file_id: 60121.0,
-        image_path: 'dataset/images/lab/cornus_florida/wb8001-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/cornus_florida/wb8001-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/cornus_florida/wb8001-01-1.png',
         species_y: 'Cornus florida',
         source: 'lab',
@@ -3486,7 +3538,8 @@ export const champTrees = {
         nominator: 'Paul Kennedy & Dan Jackson',
         sci_lc: 'ulmus americana',
         file_id: 4407.0,
-        image_path: 'dataset/images/field/ulmus_americana/1249059004_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/ulmus_americana/1249059004_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/ulmus_americana/1249059004_0000.png',
         species_y: 'Ulmus americana',
@@ -3599,7 +3652,8 @@ export const champTrees = {
         nominator: 'Dexter Duren',
         sci_lc: 'chionanthus virginicus',
         file_id: 59773.0,
-        image_path: 'dataset/images/lab/chionanthus_virginicus/pi0034-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/chionanthus_virginicus/pi0034-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/chionanthus_virginicus/pi0034-01-1.png',
         species_y: 'Chionanthus virginicus',
@@ -3629,7 +3683,7 @@ export const champTrees = {
         sci_lc: 'celtis occidentalis',
         file_id: 4340.0,
         image_path:
-          'dataset/images/field/celtis_occidentalis/1248106179_0000.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/celtis_occidentalis/1248106179_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/celtis_occidentalis/1248106179_0000.png',
         species_y: 'Celtis occidentalis',
@@ -3770,7 +3824,8 @@ export const champTrees = {
         nominator: 'Brent Gohring',
         sci_lc: 'malus angustifolia',
         file_id: 64265.0,
-        image_path: 'dataset/images/lab/malus_angustifolia/pi2415-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/malus_angustifolia/pi2415-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/malus_angustifolia/pi2415-01-1.png',
         species_y: 'Malus angustifolia',
@@ -3828,7 +3883,7 @@ export const champTrees = {
         sci_lc: 'fraxinus pennsylvanica',
         file_id: 4779.0,
         image_path:
-          'dataset/images/field/fraxinus_pennsylvanica/1249580105_0000.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/fraxinus_pennsylvanica/1249580105_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/fraxinus_pennsylvanica/1249580105_0000.png',
         species_y: 'Fraxinus pennsylvanica',
@@ -3858,7 +3913,7 @@ export const champTrees = {
         sci_lc: 'fraxinus americana',
         file_id: 4824.0,
         image_path:
-          'dataset/images/field/fraxinus_americana/1249580400_0000.jpg',
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/fraxinus_americana/1249580400_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/fraxinus_americana/1249580400_0000.png',
         species_y: 'Fraxinus americana',
@@ -3887,7 +3942,8 @@ export const champTrees = {
         nominator: 'Michael Jordon & John Martin',
         sci_lc: 'taxodium distichum',
         file_id: 73845.0,
-        image_path: 'dataset/images/lab/taxodium_distichum/wb1136-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/taxodium_distichum/wb1136-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/taxodium_distichum/wb1136-01-1.png',
         species_y: 'Taxodium distichum',
@@ -3971,7 +4027,8 @@ export const champTrees = {
         nominator: 'Deven Peek',
         sci_lc: 'fagus grandifolia',
         file_id: 56844.0,
-        image_path: 'dataset/images/lab/fagus_grandifolia/wb1001-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/fagus_grandifolia/wb1001-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/fagus_grandifolia/wb1001-01-1.png',
         species_y: 'Fagus grandifolia',
@@ -4000,7 +4057,8 @@ export const champTrees = {
         nominator: 'C. John Brewer',
         sci_lc: 'fagus grandifolia',
         file_id: 56844.0,
-        image_path: 'dataset/images/lab/fagus_grandifolia/wb1001-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/fagus_grandifolia/wb1001-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/fagus_grandifolia/wb1001-01-1.png',
         species_y: 'Fagus grandifolia',
@@ -4029,7 +4087,8 @@ export const champTrees = {
         nominator: 'Cary McDaniel',
         sci_lc: 'fagus grandifolia',
         file_id: 56844.0,
-        image_path: 'dataset/images/lab/fagus_grandifolia/wb1001-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/fagus_grandifolia/wb1001-01-1.jpg?raw=true',
         segmented_path:
           'dataset/segmented/lab/fagus_grandifolia/wb1001-01-1.png',
         species_y: 'Fagus grandifolia',
@@ -4058,7 +4117,8 @@ export const champTrees = {
         nominator: 'Patrick Thompson',
         sci_lc: 'betula nigra',
         file_id: 16019.0,
-        image_path: 'dataset/images/field/betula_nigra/1258487222_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/betula_nigra/1258487222_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/betula_nigra/1258487222_0000.png',
         species_y: 'Betula nigra',
@@ -4087,7 +4147,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'betula lenta',
         file_id: 4375.0,
-        image_path: 'dataset/images/field/betula_lenta/1248106459_0000.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/field/betula_lenta/1248106459_0000.jpg?raw=true',
         segmented_path:
           'dataset/segmented/field/betula_lenta/1248106459_0000.png',
         species_y: 'Betula lenta',
@@ -4116,7 +4177,8 @@ export const champTrees = {
         nominator: 'Jill Browning',
         sci_lc: 'nyssa sylvatica',
         file_id: 62140.0,
-        image_path: 'dataset/images/lab/nyssa_sylvatica/ny1128-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/nyssa_sylvatica/ny1128-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/nyssa_sylvatica/ny1128-01-1.png',
         species_y: 'Nyssa sylvatica',
         source: 'lab',
@@ -4284,7 +4346,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'juglans cinerea',
         file_id: 58738.0,
-        image_path: 'dataset/images/lab/juglans_cinerea/wb1487-01-1.jpg',
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/lab/juglans_cinerea/wb1487-01-1.jpg?raw=true',
         segmented_path: 'dataset/segmented/lab/juglans_cinerea/wb1487-01-1.png',
         species_y: 'Juglans cinerea',
         source: 'lab',

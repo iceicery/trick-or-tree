@@ -20,24 +20,26 @@ export default function ChampionCard({
 
           <div className="championcard__info-box">
             <p className="championcard__info">
-              County:<span>{location}</span>
+              County:<span> {location}</span>
+              <br />
+              Subspecies:<span> {subspecies}</span>
+              <br />
+              Circumference:<span> {circumference}</span> in
+              <br />
+              Height:<span> {height}</span> ft
+              <br />
+              Spread:<span> {spread}</span> ft
+              <br />
+              Total Point:<span> {total_points}</span>
+              <br />
+              compare with the champion:
             </p>
-            <p className="championcard__info">
-              Circumference:<span>{circumference}</span> in
-            </p>
-            <p className="championcard__info">
-              Height:<span>{height}</span> ft
-            </p>
-            <p className="championcard__info">
-              Spread:<span>{spread}</span> ft
-            </p>
-            <p className="championcard__info">
-              Total Points:<span>{total_points}</span>
-            </p>
-
-            <p className="championcard__info">
-              Subspecies:<span>{subspecies}</span>
-            </p>
+            <div className="championcard__point-compare">
+              <div
+                style={{ width: `calc(${total_points} / 479 * 100px)` }}
+                className="championcard__point-comare-in"
+              ></div>
+            </div>
           </div>
         </div>
         <p className="championcard__description">{description}</p>
