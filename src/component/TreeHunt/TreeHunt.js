@@ -16,6 +16,7 @@ import {
 import { useState } from 'react';
 import Result from '../Result/Result';
 import { Link } from 'react-router-dom';
+import BadgeCard from '../BadgeCard/BadgeCard';
 
 export default function TreeHunt({
   toggleTips,
@@ -23,16 +24,24 @@ export default function TreeHunt({
   tree,
   handleBadge,
   badges,
+  toggleInfoOpen,
+  infoOpen,
 }) {
   const [selected, setSelected] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSelectPage = 2;
   const [isResultOpen, setIsResultOpen] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-  console.log(tree.class);
-  console.log(selected);
-  console.log(tree);
-  console.log(badges);
+  const [isBadgeHad, setIsBadgeHad] = useState(false);
+
+  function arrayEquals(a, b) {
+    return (
+      Array.isArray(a) &&
+      Array.isArray(b) &&
+      a.length === b.length &&
+      a.every((val, index) => val === b[index])
+    );
+  }
 
   function toggleResultOpen() {
     setIsResultOpen(!isResultOpen);
@@ -48,12 +57,19 @@ export default function TreeHunt({
       return;
     }
     setIsCorrect(true);
+    if (badges.some((i) => arrayEquals(i.code, tree.code))) {
+      setIsBadgeHad(true);
+    } else {
+      setIsBadgeHad(false);
+    }
   }
 
   function getBadge() {
-    handleBadge(tree);
+    if (!isBadgeHad) {
+      handleBadge(tree);
+    }
+    console.log('no add');
   }
-  console.log(isCorrect);
 
   function moveRight() {
     if (currentIndex >= totalSelectPage - 1) {
@@ -83,13 +99,26 @@ export default function TreeHunt({
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
       {isCorrect ? (
         <Result
-          text="Great observe! You identfy all the items and find:"
+          text="Great observe! You identfied all the items and found:"
           plant={tree.name}
           image={medal}
           alt="medal"
           toggleResultOpen={toggleResultOpen}
           isResultOpen={isResultOpen}
         >
+          {isBadgeHad && (
+            <p style={{ color: 'red' }}>
+              Good effort! You already got this badge.
+            </p>
+          )}
+          <button className="result__button" onClick={toggleInfoOpen}>
+            Learn {tree.name}
+          </button>
+          <BadgeCard
+            badge={tree}
+            infoOpen={infoOpen}
+            toggleInfoOpen={toggleInfoOpen}
+          />
           <Link to="/badge">
             <button className="result__button" onClick={getBadge}>
               Get Badge
@@ -143,7 +172,7 @@ export default function TreeHunt({
           <Selection
             title={leafArrange.title}
             choices={leafArrange.choices}
-            n={2}
+            n={3}
             selected={selected}
             handleSelect={handleSelect}
             handleUnselect={handleUnselect}

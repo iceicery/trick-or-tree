@@ -5,7 +5,7 @@ import close from '../../images/times-solid.svg';
 import { Link } from 'react-router-dom';
 import home from '../../images/home.svg';
 
-export default function TreeHuntMap({ isMapOpen, toggleMap }) {
+export default function TreeHuntMap({ toggleMap, badges }) {
   return (
     <section className="treehuntmap">
       <div>
@@ -33,7 +33,11 @@ export default function TreeHuntMap({ isMapOpen, toggleMap }) {
         {treepins.map((pin, i) => (
           <Marker key={i} position={pin.coor}>
             <Popup>
-              <p>{pin.name}</p>
+              <p>
+                {badges.some((item) => item.name === pin.name)
+                  ? pin.name
+                  : 'Find me!'}
+              </p>
             </Popup>
           </Marker>
         ))}

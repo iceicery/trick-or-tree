@@ -30,7 +30,7 @@ export default function ChampionMap() {
             <Popup>
               <ChampionCard
                 img_url={tree.properties.image_path}
-                name={tree.properties.scientific_name}
+                name={tree.properties.species_x}
                 subspecies={tree.properties.subspecies}
                 spread={tree.properties.spread_ft}
                 description={tree.properties.wiki_summary}

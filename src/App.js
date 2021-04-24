@@ -14,6 +14,11 @@ function App() {
   const [isMapOpen, setIsMapOpen] = useState(true);
   const [tree, setTree] = useState({});
   const [badges, setBadges] = useState([]);
+  const [infoOpen, setInfoOpen] = useState(false);
+
+  function toggleInfoOpen() {
+    setInfoOpen(!infoOpen);
+  }
 
   function handleTree(tree) {
     setTree(tree);
@@ -32,13 +37,10 @@ function App() {
 
   useEffect(() => {
     const badgeCard = JSON.parse(localStorage.getItem('badgeCard'));
-    console.log(badgeCard);
     if (badgeCard) {
       setBadges(badgeCard);
     }
   }, []);
-  const badgeCard = JSON.parse(localStorage.getItem('badgeCard'));
-  console.log(badgeCard);
 
   return (
     <Router basename={window.location.pathname || ''}>
@@ -51,7 +53,7 @@ function App() {
             <ChampionMap />
           </Route>
           <Route path="/treehunt-map">
-            <TreeHuntMap />
+            <TreeHuntMap badges={badges} />
           </Route>
           <Route path="/about">
             <About />
@@ -75,10 +77,16 @@ function App() {
               tree={tree}
               handleBadge={handleBadge}
               badges={badges}
+              infoOpen={infoOpen}
+              toggleInfoOpen={toggleInfoOpen}
             />
           </Route>
           <Route path="/badge">
-            <Badge badges={badges} />
+            <Badge
+              badges={badges}
+              infoOpen={infoOpen}
+              toggleInfoOpen={toggleInfoOpen}
+            />
           </Route>
         </Switch>
       </div>
