@@ -37,6 +37,11 @@
   position: relative;
 }
 
+.badge__list-item:hove {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .badge__list-out {
   width: 100px;
 }

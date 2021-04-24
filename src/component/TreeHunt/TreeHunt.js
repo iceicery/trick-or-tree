@@ -16,6 +16,7 @@ import {
 import { useState } from 'react';
 import Result from '../Result/Result';
 import { Link } from 'react-router-dom';
+import BadgeCard from '../BadgeCard/BadgeCard';
 
 export default function TreeHunt({
   toggleTips,
@@ -23,6 +24,8 @@ export default function TreeHunt({
   tree,
   handleBadge,
   badges,
+  toggleInfoOpen,
+  infoOpen,
 }) {
   const [selected, setSelected] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,6 +33,15 @@ export default function TreeHunt({
   const [isResultOpen, setIsResultOpen] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [isBadgeHad, setIsBadgeHad] = useState(false);
+
+  function arrayEquals(a, b) {
+    return (
+      Array.isArray(a) &&
+      Array.isArray(b) &&
+      a.length === b.length &&
+      a.every((val, index) => val === b[index])
+    );
+  }
 
   function toggleResultOpen() {
     setIsResultOpen(!isResultOpen);
@@ -45,15 +57,18 @@ export default function TreeHunt({
       return;
     }
     setIsCorrect(true);
-    if (!badges.includes(tree)) {
+    if (badges.some((i) => arrayEquals(i.code, tree.code))) {
       setIsBadgeHad(true);
+    } else {
+      setIsBadgeHad(false);
     }
   }
 
   function getBadge() {
-    if (!badges.includes(tree)) {
+    if (!isBadgeHad) {
       handleBadge(tree);
     }
+    console.log('no add');
   }
 
   function moveRight() {
@@ -84,7 +99,7 @@ export default function TreeHunt({
       <Tips toggleTips={toggleTips} isTipsOpen={isTipsOpen} />
       {isCorrect ? (
         <Result
-          text="Great observe! You identfy all the items and find:"
+          text="Great observe! You identfied all the items and found:"
           plant={tree.name}
           image={medal}
           alt="medal"
@@ -96,6 +111,14 @@ export default function TreeHunt({
               Good effort! You already got this badge.
             </p>
           )}
+          <button className="result__button" onClick={toggleInfoOpen}>
+            Learn {tree.name}
+          </button>
+          <BadgeCard
+            badge={tree}
+            infoOpen={infoOpen}
+            toggleInfoOpen={toggleInfoOpen}
+          />
           <Link to="/badge">
             <button className="result__button" onClick={getBadge}>
               Get Badge

@@ -14,6 +14,11 @@ function App() {
   const [isMapOpen, setIsMapOpen] = useState(true);
   const [tree, setTree] = useState({});
   const [badges, setBadges] = useState([]);
+  const [infoOpen, setInfoOpen] = useState(false);
+
+  function toggleInfoOpen() {
+    setInfoOpen(!infoOpen);
+  }
 
   function handleTree(tree) {
     setTree(tree);
@@ -72,10 +77,16 @@ function App() {
               tree={tree}
               handleBadge={handleBadge}
               badges={badges}
+              infoOpen={infoOpen}
+              toggleInfoOpen={toggleInfoOpen}
             />
           </Route>
           <Route path="/badge">
-            <Badge badges={badges} />
+            <Badge
+              badges={badges}
+              infoOpen={infoOpen}
+              toggleInfoOpen={toggleInfoOpen}
+            />
           </Route>
         </Switch>
       </div>
