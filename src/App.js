@@ -32,13 +32,10 @@ function App() {
 
   useEffect(() => {
     const badgeCard = JSON.parse(localStorage.getItem('badgeCard'));
-    console.log(badgeCard);
     if (badgeCard) {
       setBadges(badgeCard);
     }
   }, []);
-  const badgeCard = JSON.parse(localStorage.getItem('badgeCard'));
-  console.log(badgeCard);
 
   return (
     <Router basename={window.location.pathname || ''}>
@@ -51,7 +48,7 @@ function App() {
             <ChampionMap />
           </Route>
           <Route path="/treehunt-map">
-            <TreeHuntMap />
+            <TreeHuntMap badges={badges} />
           </Route>
           <Route path="/about">
             <About />

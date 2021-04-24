@@ -32,7 +32,7 @@ export default function ChampionCard({
               <br />
               Total Point:<span> {total_points}</span>
               <br />
-              compare with the champion:
+              compare with the AL champion:
             </p>
             <div className="championcard__point-compare">
               <div

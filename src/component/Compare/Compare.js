@@ -15,6 +15,7 @@ export default function Compare({ twotrees }) {
         return 'green';
     }
   }
+
   return (
     <section className="compare">
       <h2 className="compare__title">{twotrees[0].name}</h2>
