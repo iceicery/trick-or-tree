@@ -29,6 +29,7 @@ export default function TreeHunt({
   const totalSelectPage = 2;
   const [isResultOpen, setIsResultOpen] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [isBadgeHad, setIsBadgeHad] = useState(false);
 
   function toggleResultOpen() {
     setIsResultOpen(!isResultOpen);
@@ -44,12 +45,16 @@ export default function TreeHunt({
       return;
     }
     setIsCorrect(true);
+    if (!badges.includes(tree)) {
+      setIsBadgeHad(true);
+    }
   }
 
   function getBadge() {
-    handleBadge(tree);
+    if (!badges.includes(tree)) {
+      handleBadge(tree);
+    }
   }
-  console.log(isCorrect);
 
   function moveRight() {
     if (currentIndex >= totalSelectPage - 1) {
@@ -86,6 +91,11 @@ export default function TreeHunt({
           toggleResultOpen={toggleResultOpen}
           isResultOpen={isResultOpen}
         >
+          {isBadgeHad && (
+            <p style={{ color: 'red' }}>
+              Good effort! You already got this badge.
+            </p>
+          )}
           <Link to="/badge">
             <button className="result__button" onClick={getBadge}>
               Get Badge
