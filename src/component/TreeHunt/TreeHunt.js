@@ -172,7 +172,7 @@ export default function TreeHunt({
           <Selection
             title={leafArrange.title}
             choices={leafArrange.choices}
-            n={2}
+            n={3}
             selected={selected}
             handleSelect={handleSelect}
             handleUnselect={handleUnselect}

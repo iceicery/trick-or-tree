@@ -27,6 +27,7 @@ import spatula from '../images/shape-spatula.PNG';
 import star from '../images/shape-star.PNG';
 import triangle from '../images/shape-triangle.PNG';
 import tulip from '../images/shape-tulip.PNG';
+import whorled from '../images/arrangement-whorled.PNG';
 
 export const leafShape = {
   title: 'Leaf Shape',
@@ -52,6 +53,7 @@ export const leafArrange = {
   choices: [
     { image: alternate, description: 'Alternate' },
     { image: opposite, description: 'Opposite' },
+    { image: whorled, description: 'Whorled' },
   ],
 };
 
