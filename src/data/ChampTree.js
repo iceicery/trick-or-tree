@@ -19,7 +19,8 @@ export const champTrees = {
         nominator: 'Cory Sly',
         sci_lc: 'ilex vomitoria',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/ilex_vomitoria/ilex_vomitoria.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -77,7 +78,8 @@ export const champTrees = {
         nominator: 'Wayne Webb',
         sci_lc: 'cladrastis kentukea',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/cladrastis_kentukea/cladrastis_kentukea.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -105,7 +107,8 @@ export const champTrees = {
         nominator: 'Dr. Harry Larsen & Fred Nation',
         sci_lc: 'prunus umbellata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/prunus_umbellata/prunus_umbellata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -133,7 +136,8 @@ export const champTrees = {
         nominator: 'Gena Todia & Fred Nation',
         sci_lc: 'taxodium ascendens',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/taxodium_ascendens/taxodium_ascendens.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -161,7 +165,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'forestiera acuminata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/forestiera_acuminata/forestiera_acuminata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -249,7 +254,8 @@ export const champTrees = {
         nominator: 'Ken Richardson & Tom Ellis',
         sci_lc: 'juniperus silicicola',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/juniperus_silicicola/juniperus_silicicola.JPG?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -337,7 +343,8 @@ export const champTrees = {
         nominator: 'Charles Wise & Ryan Prince',
         sci_lc: 'halesia carolina',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/halesia_carolina/halesia_carolina.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -365,7 +372,8 @@ export const champTrees = {
         nominator: 'Tommy Lawler',
         sci_lc: 'halesia diptera',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/halesia_diptera/halesia_diptera.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -423,7 +431,8 @@ export const champTrees = {
         nominator: 'Earl Jenkins',
         sci_lc: 'vaccinium arboreum',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/vaccinium_arboreum/vaccinium_arboreum.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -451,7 +460,8 @@ export const champTrees = {
         nominator: 'Daniel J. Drennen',
         sci_lc: 'celtis laevigata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/celtis_laevigata/celtis_laevigata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -479,7 +489,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'rhus glabra',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/rhus_glabra/rhus_glabra.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -507,7 +518,8 @@ export const champTrees = {
         nominator: 'Adam Dasinger',
         sci_lc: 'rhus copallina',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/rhus_copallina/rhus_copallina.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -565,7 +577,8 @@ export const champTrees = {
         nominator: 'Tony Avery',
         sci_lc: 'symplocos tinctoria',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/symplocos_tinctoria/symplocos_tinctoria.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -623,7 +636,8 @@ export const champTrees = {
         nominator: 'Fred Nation- N',
         sci_lc: 'nyssa biflora',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/nyssa_biflora/nyssa_biflora.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -651,7 +665,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'nyssa aquatica',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/nyssa_aquatica/nyssa_aquatica.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -709,7 +724,8 @@ export const champTrees = {
         nominator: 'Stan Roark',
         sci_lc: 'hamamelis virginiana',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/hamamelis_virginiana/hamamelis_virginiana.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -945,7 +961,8 @@ export const champTrees = {
         nominator: 'Glenn Barrett & Brian Smith',
         sci_lc: 'pyrus communis',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/pyrus_communis/pyrus_communis.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -973,7 +990,8 @@ export const champTrees = {
         nominator: 'Mason McGowin',
         sci_lc: 'carya illinoensis',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/carya_illinoensis/carya_illinoensis.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1060,7 +1078,8 @@ export const champTrees = {
         nominator: 'Selena C. Vaughn',
         sci_lc: 'pinus palustris',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/pinus_palustris/pinus_palustris.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1088,7 +1107,8 @@ export const champTrees = {
         nominator: 'Chan West',
         sci_lc: 'pinus clausa',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/pinus_clausa/pinus_clausa.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1145,7 +1165,8 @@ export const champTrees = {
         nominator: 'Thomas W. Savage',
         sci_lc: 'pinus echinate',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/pinus_echinata/pinus_echinata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1173,7 +1194,8 @@ export const champTrees = {
         nominator: 'Gena Todia & Fred Nation',
         sci_lc: 'pinus elliottii',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/pinus_elliottii/pinus_elliottii.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1201,7 +1223,8 @@ export const champTrees = {
         nominator: 'David Boozer & Sharon Clark',
         sci_lc: 'pinus glabra',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/pinus_glabra/pinus_glabra.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1259,7 +1282,8 @@ export const champTrees = {
         nominator: 'John McBride',
         sci_lc: 'prunus americana',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/prunus_americana/prunus_americana.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1287,7 +1311,8 @@ export const champTrees = {
         nominator: 'Lynn Justiss & Ned Jenkins',
         sci_lc: 'prunus americana',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/prunus_americana/prunus_americana.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1315,7 +1340,8 @@ export const champTrees = {
         nominator: 'Maureen Nation',
         sci_lc: 'prunus angustifolia',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/prunus_angustifolia/prunus_angustifolia.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1373,7 +1399,8 @@ export const champTrees = {
         nominator: 'Tim Washburne',
         sci_lc: 'quercus hemisphaerica',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_hemisphaerica/quercus_hemisphaerica.PNG?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1401,7 +1428,8 @@ export const champTrees = {
         nominator: 'Jason Ledbetter',
         sci_lc: 'quercus durandii',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_durandii/quercus_durandii.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1429,7 +1457,8 @@ export const champTrees = {
         nominator: 'Steve Gardiner',
         sci_lc: 'quercus durandii',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_durandii/quercus_durandii.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1457,7 +1486,8 @@ export const champTrees = {
         nominator: 'Patrick Thompson',
         sci_lc: 'quercus georgiana',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_georgiana/quercus_georgiana.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1485,7 +1515,8 @@ export const champTrees = {
         nominator: 'Kim Mayton',
         sci_lc: 'quercus laurifolia',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_laurifolia/quercus_laurifolia.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1543,7 +1574,8 @@ export const champTrees = {
         nominator: 'Dr. Harry Larsen & Fred Nation',
         sci_lc: 'quercus myrtifolia',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_myrtifolia/quercus_myrtifolia.gif?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1601,7 +1633,8 @@ export const champTrees = {
         nominator: 'Morgan Beadles- N',
         sci_lc: 'quercus texana',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_texana/quercus_texana.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1629,7 +1662,8 @@ export const champTrees = {
         nominator: 'Tom Wasmer',
         sci_lc: 'quercus lyrata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_lyrata/quercus_lyrata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1687,7 +1721,8 @@ export const champTrees = {
         nominator: 'Ethan Barrett- N',
         sci_lc: 'quercus lyrata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_lyrata/quercus_lyrata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1715,7 +1750,8 @@ export const champTrees = {
         nominator: 'Richie Nell',
         sci_lc: 'quercus geminata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_geminata/quercus_geminata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1743,7 +1779,8 @@ export const champTrees = {
         nominator: 'Dr. Harry Larsen',
         sci_lc: 'quercus margaretta',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_margaretta/quercus_margaretta.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -1980,7 +2017,8 @@ export const champTrees = {
         nominator: 'Tommy Lawler',
         sci_lc: 'magnolia pyramidata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/magnolia_pyramidata/magnolia_pyramidata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2127,7 +2165,8 @@ export const champTrees = {
         nominator: 'Wayne Webb',
         sci_lc: 'acer leucoderme',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/acer_leucoderme/acer_leucoderme.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2143,7 +2182,7 @@ export const champTrees = {
       properties: {
         species_x: 'MAPLE',
         subspecies: ' Florida',
-        scientific_name: 'Acer barbatum',
+        scientific_name: 'Acer floridanum',
         year_named: 2010.0,
         circumference_in: 81.0,
         height_in: 85.0,
@@ -2155,7 +2194,8 @@ export const champTrees = {
         nominator: 'Wayne Webb',
         sci_lc: 'acer barbatum',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/acer_floridanum/acer_floridanum.JPG?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2272,7 +2312,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'crataegus aestivalis',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/crataegus_aestivalis/crataegus_aestivalis.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2330,7 +2371,8 @@ export const champTrees = {
         nominator: 'Tom Lang',
         sci_lc: 'quercus arkansana',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_arkansana/quercus_arkansana.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2448,7 +2490,8 @@ export const champTrees = {
         nominator: 'Dr. Harry Larsen & Fred Nation',
         sci_lc: 'quercus austrina',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_austrina/quercus_austrina.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2506,7 +2549,8 @@ export const champTrees = {
         nominator: 'Ben Etheridge',
         sci_lc: 'quercus pagoda',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_pagoda/quercus_pagoda.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2534,7 +2578,8 @@ export const champTrees = {
         nominator: 'Nick Jordan',
         sci_lc: 'quercus prinus',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/quercus_prinus/quercus_prinus.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2592,7 +2637,8 @@ export const champTrees = {
         nominator: 'Dr. Harry Larsen & Fred Nation',
         sci_lc: 'zanthoxylum clava-herculis',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/zanthoxylum_clava-herculis/zanthoxylum_clava-herculis.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2650,7 +2696,8 @@ export const champTrees = {
         nominator: 'Wayne Webb',
         sci_lc: 'carya carolinae-septentrionalis',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/carya_carolinae-septentrionalis/carya_carolinae-septentrionalis.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2706,7 +2753,8 @@ export const champTrees = {
         nominator: 'Dr. Thomas H. Wilson',
         sci_lc: 'carya myristiciformis',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/carya_myristiciformis/carya_myristiciformis.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2763,7 +2811,8 @@ export const champTrees = {
         nominator: 'Wayne K. Webb',
         sci_lc: 'carya ovalis',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/carya_ovalis/carya_ovalis.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2791,7 +2840,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'carya pallida',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/carya_pallida/carya_pallida.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2877,7 +2927,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'carya laciniosa',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/carya_laciniosa/carya_laciniosa.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2905,7 +2956,8 @@ export const champTrees = {
         nominator: 'Dr. Harry Larsen & Fred Nation',
         sci_lc: 'carya aquatica',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/carya_aquatica/carya_aquatica.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -2963,7 +3015,8 @@ export const champTrees = {
         nominator: 'Chan West',
         sci_lc: 'ilex cassine',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/ilex_cassine/ilex_cassine.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3051,7 +3104,8 @@ export const champTrees = {
         nominator: 'Gena Todia',
         sci_lc: 'gordonia lasianthus',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/gordonia_lasianthus/gordonia_lasianthus.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3079,7 +3133,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'robinia pseudoacacia',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/robinia_pseudoacacia/robinia_pseudoacacia.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3197,7 +3252,8 @@ export const champTrees = {
         nominator: 'Gena Todia, N',
         sci_lc: 'chameacyparis thyoides',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/chamaecyparis_thyoides/chamaecyparis_thyoides.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3225,7 +3281,8 @@ export const champTrees = {
         nominator: 'Dexter Duren',
         sci_lc: 'prunus alabamensis',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/prunus_alabamensis/prunus_alabamensis.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3283,7 +3340,8 @@ export const champTrees = {
         nominator: 'Steve Albritton',
         sci_lc: 'prunus caroliniana',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/prunus_caroliniana/prunus_caroliniana.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3311,7 +3369,8 @@ export const champTrees = {
         nominator: 'Blake Kelley',
         sci_lc: 'castanea mollissima',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/castanea_mollissima/castanea_mollissima.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3339,7 +3398,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'castanea pumila',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/castanea_pumila/castanea_pumila.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3397,7 +3457,8 @@ export const champTrees = {
         nominator: 'Joseph Donnelly',
         sci_lc: 'populus heterophylla',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/populus_heterophylla/populus_heterophylla.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3425,7 +3486,8 @@ export const champTrees = {
         nominator: 'Malcolm Smith',
         sci_lc: 'lagerstroemia indica',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/lagerstroemia_indica/lagerstroemia_indica.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3453,7 +3515,8 @@ export const champTrees = {
         nominator: 'Patrick Waldrop',
         sci_lc: 'cyrilla racemiflora',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/cyrilla_racemiflora/cyrilla_racemiflora.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3481,7 +3544,8 @@ export const champTrees = {
         nominator: 'Adam Dasinger',
         sci_lc: 'osmanthus americanus',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/osmanthus_americanus/osmanthus_americanus.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3568,7 +3632,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'ulmus serotina',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/ulmus_serotina/ulmus_serotina.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3596,7 +3661,8 @@ export const champTrees = {
         nominator: 'Dr. Harry Larsen',
         sci_lc: 'planera aquatica',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/planera_aquatica/planera_aquatica.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3624,7 +3690,8 @@ export const champTrees = {
         nominator: 'Paul Wingard',
         sci_lc: 'ulmus alata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/ulmus_alata/ulmus_alata.png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3712,7 +3779,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'crataegus punctata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/crataegus_punctata/crataegus_punctata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3740,7 +3808,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'crataegus spathulta',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/crataegus_spathulata/crataegus_spathulata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3768,7 +3837,8 @@ export const champTrees = {
         nominator: 'John McBride',
         sci_lc: 'alnus serrulata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/alnus_serrulata/alnus_serrulata.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3796,7 +3866,8 @@ export const champTrees = {
         nominator: 'Melody Stewart',
         sci_lc: 'cotinus obovatu',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/_cotinus_obovatus/_cotinus_obovatus.JPG?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3854,7 +3925,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'fraxinus quadrangulata',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/fraxinus_quadrangulata/fraxinus_quadrangulata.JPG?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3972,7 +4044,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'tilia spp.',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/tilia_spp./tilia_spp..png?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -3999,7 +4072,8 @@ export const champTrees = {
         nominator: 'Dr. Harry Larsen & Fred Nation',
         sci_lc: 'morella inodora',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/morella_inodora/morella_inodora.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -4206,7 +4280,8 @@ export const champTrees = {
         nominator: 'Keith Niedermeier',
         sci_lc: 'aesculus pavia',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/aesculus_pavia/aesculus_pavia.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -4234,7 +4309,8 @@ export const champTrees = {
         nominator: 'Susan Weber',
         sci_lc: 'aesculus octandra',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/aesculus_octandra/aesculus_octandra.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -4262,7 +4338,8 @@ export const champTrees = {
         nominator: 'John McBride',
         sci_lc: 'rhamnus caroliniana',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/rhamnus_caroliniana/rhamnus_caroliniana.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -4290,7 +4367,8 @@ export const champTrees = {
         nominator: 'Jason Shelton',
         sci_lc: 'bumelia lycioides',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/sideroxylon_lycioides/sideroxylon_lycioides.jpg?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
@@ -4318,7 +4396,8 @@ export const champTrees = {
         nominator: 'Bob G. Winters',
         sci_lc: 'bumelia lanuginosa',
         file_id: null,
-        image_path: null,
+        image_path:
+          'https://github.com/iceicery/trick-or-tree/blob/main/dataset/images/wiki/bumelia_lanuginosa/bumelia_lanuginosa.gif?raw=true',
         segmented_path: null,
         species_y: null,
         source: null,
