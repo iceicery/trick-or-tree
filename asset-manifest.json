@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/trick-or-tree/static/css/main.e7b9016b.chunk.css",
-    "main.js": "/trick-or-tree/static/js/main.0625ff19.chunk.js",
-    "main.js.map": "/trick-or-tree/static/js/main.0625ff19.chunk.js.map",
+    "main.js": "/trick-or-tree/static/js/main.5131bb4f.chunk.js",
+    "main.js.map": "/trick-or-tree/static/js/main.5131bb4f.chunk.js.map",
     "runtime-main.js": "/trick-or-tree/static/js/runtime-main.01c4ff1e.js",
     "runtime-main.js.map": "/trick-or-tree/static/js/runtime-main.01c4ff1e.js.map",
     "static/js/2.cd0dd8c4.chunk.js": "/trick-or-tree/static/js/2.cd0dd8c4.chunk.js",
@@ -60,6 +60,6 @@
     "static/js/runtime-main.01c4ff1e.js",
     "static/js/2.cd0dd8c4.chunk.js",
     "static/css/main.e7b9016b.chunk.css",
-    "static/js/main.0625ff19.chunk.js"
+    "static/js/main.5131bb4f.chunk.js"
   ]
 }
