@@ -1,7 +1,6 @@
 .badge {
   width: 100vw;
   height: 100vh;
-  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,4 +61,15 @@
   width: 100%;
   color: #fff;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .badge__list {
+    margin: 30px;
+  }
+  .badge__button-home {
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
 }

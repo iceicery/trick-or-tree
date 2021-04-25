@@ -26,3 +26,12 @@
   color: #000;
   font-size: 15px;
 }
+
+@media (min-width: 768px) {
+  .badgecard {
+    max-width: 350px;
+    position: fixed;
+    top: 10%;
+    left: calc(50% - 175px);
+  }
+}

@@ -46,3 +46,22 @@
   font-weight: 100;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .selection {
+    margin: 10px;
+  }
+  .selection__title {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
+  .selection__description {
+    font-size: 20px;
+  }
+  .selection__img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+}

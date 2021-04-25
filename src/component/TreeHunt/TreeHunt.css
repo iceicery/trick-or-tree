@@ -67,3 +67,23 @@
   background-color: #000;
   border: solid #000 0.5px;
 }
+
+@media (min-width: 768px) {
+  .treehunt {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .treehunt__title {
+    font-size: 40px;
+  }
+
+  .treehunt__button-check {
+    right: 100px;
+    padding: 10px;
+    background-color: transparent;
+    border: solid #fff 0.5px;
+    color: #fff;
+    font-size: 30px;
+  }
+}
