@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+## Inspiration
+We are a couple with two kids. While we enjoy outdoors and love trees, we don't know the first thing about any trees. 
+We think this would be a great opportunity for us to learn more about the trees around us together as a family, 
+and we hope our project can help others do the same. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+Trick-or-Treat is a hybrid of scavenger hunt, tree identification, and education. 
+In addition to having easy accesses to information about the champion trees in Alabama, 
+the users can also find targets from a user-defined list of trees, 
+and answer some guided questions to learn about the specifics of the target tree. 
+One the users correctly recognize the unique features of the target, they will be awarded with a badge!
+It's an app that you can use outdoors, to make your afternoon stroll more interesting and educational;
+and it's an app that you can use at home to learn about the AL champion trees and the trees with which you've earned badges. 
 
-## Available Scripts
+## How we built it
+We scrapped the AL champion tree data from the Alabama Forestry Commission, and supplement the table with images and facts the from the leafsnap database and wikipedia. 
+The data cleaning and aggregation were done using python with packages such as pandas and geopandas. The webapp was developed using a combination of React.js, node.js, JavaScript, CSS, HTML, Leaflet.js.
 
-In the project directory, you can run:
+## Challenges we ran into
+Doing the hackathon through the week was certainly, 
+with two kids and other work responsibilities, 
+there is very limited time to develop UI/UX for an webapp. 
+Data cleaning and aggregation were also challenging due to the inhomogeneity of different data sources.
+Being almost a completely novice in trees and biology was also challenging, but overall it was a very fun and rewarding experience.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Accomplishments that we're proud of
+We are proud of our idea and the results. 
+The app achieved our goal of being user-friendly, our 7-year-old son certainly seemed to understand the gist of it.
+Also, we were able to do a field test of the app at the Huntsville Botanical Garden 
+and we are proud of the results -- it proved to be a quite interesting and informative trip.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## What we learned
+Trees, where to find trees, and how to identify trees. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for Trick-or-tree
+One things that's currently missing in our webapp is the in-depth knowledge on the genetic information of different trees. 
+We have already collected gene and genome datasets for different species in our AL champion tree list. 
+We plan to learn more about the genome of different tree species and 
+Also, we think the webapp can be of use to educators in many different topics. 
+We plan to expand the back-end functionality to make creating a custom list a breeze for anyone,
+after which we will reach out to local teachers, botanical garden and museum staff, and hopefully our product would bring joy and knowledge to many people. 
